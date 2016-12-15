@@ -9,6 +9,9 @@
     enabled: false
   TooManyStatements:
     max_statements: 10
+  InstanceVariableAssumption:
+    enabled: false
+
 "app/policies":
   IrresponsibleModule:
     enabled: false
@@ -16,11 +19,13 @@
     max_allowed_nesting: 2
   UnusedPrivateMethod:
     enabled: false
+
 "app/models":
   IrresponsibleModule:
     enabled: false
   RepeatedConditional:
     enabled: false
+
 "app/helpers":
   IrresponsibleModule:
     enabled: false
@@ -28,6 +33,7 @@
     enabled: false
   ControlParameter:
     enabled: false
+
 "app/channels":
   IrresponsibleModule:
     enabled: false
@@ -35,6 +41,7 @@
     max_allowed_nesting: 2
   UnusedPrivateMethod:
     enabled: false
+
 "app/jobs":
   IrresponsibleModule:
     enabled: false
