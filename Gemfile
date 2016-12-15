@@ -12,6 +12,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Application servers
 gem 'puma', '~> 3.0'
 
+# AAA
+gem 'pundit'
+
 group :development, :test do
   # Tooling
   gem 'pry-rails'
@@ -34,14 +37,18 @@ group :development do
   gem 'rubocop'
   gem 'reek'
   gem 'brakeman'
+  
+  # Testing frameworks
+  gem 'rspec-rails', '~> 3.5.0'
+  gem 'fuubar'
+  gem 'factory_girl_rails'
+  gem 'faker'
 end
 
 group :test do
   # Coverage
   gem 'coveralls', require: false
 
-  # Testing frameworks
-  gem 'capybara'
   gem 'shoulda-matchers', '~> 3.1'
 end
 
