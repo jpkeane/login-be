@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  VALID_USERNAME_REGEX = /\A[a-zA-Z0-9\_\-]+\z/
+  VALID_USERNAME_REGEX = /\A[a-zA-Z0-9\_\-\.]+\z/
 
   validates :name,      presence: true
   validates :username,  presence: true, format: { with: VALID_USERNAME_REGEX }, uniqueness: { case_sensitive: false }

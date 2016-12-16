@@ -9,10 +9,14 @@ gem 'pg', '~> 0.18'
 # Core
 gem 'bcrypt', '~> 3.1.7'
 
+# API
+gem 'active_model_serializers', '~> 0.10.2'
+
 # Application servers
 gem 'puma', '~> 3.0'
 
 # AAA
+gem 'doorkeeper'
 gem 'pundit'
 
 group :development do
@@ -40,6 +44,7 @@ group :development, :test do
   
   # Testing frameworks
   gem 'rspec-rails', '~> 3.5.0'
+  gem 'rspec_api_documentation'
   gem 'spring-commands-rspec'
   gem 'fuubar'
   gem 'factory_girl_rails'
