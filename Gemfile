@@ -15,15 +15,6 @@ gem 'puma', '~> 3.0'
 # AAA
 gem 'pundit'
 
-group :development, :test do
-  # Tooling
-  gem 'pry-rails'
-  gem 'pry-byebug'
-  
-  # Debugging
-  gem 'byebug', platform: :mri
-end
-
 group :development do
   # Tooling
   gem 'spring'
@@ -37,6 +28,15 @@ group :development do
   gem 'rubocop'
   gem 'reek'
   gem 'brakeman'
+end
+
+group :development, :test do
+  # Tooling
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  
+  # Debugging
+  gem 'byebug', platform: :mri
   
   # Testing frameworks
   gem 'rspec-rails', '~> 3.5.0'
