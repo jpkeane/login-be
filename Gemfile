@@ -40,6 +40,7 @@ group :development do
   
   # Testing frameworks
   gem 'rspec-rails', '~> 3.5.0'
+  gem 'spring-commands-rspec'
   gem 'fuubar'
   gem 'factory_girl_rails'
   gem 'faker'
