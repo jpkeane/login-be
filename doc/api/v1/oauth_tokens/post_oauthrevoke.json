@@ -4,7 +4,7 @@
   "http_method": "POST",
   "route": "/oauth/revoke",
   "description": "POST /oauth/revoke",
-  "explanation": null,
+  "explanation": "Revoke the OAuth2 token and make it unavailable for authentication.",
   "parameters": [
     {
       "required": true,
@@ -19,9 +19,9 @@
     {
       "request_method": "POST",
       "request_path": "/oauth/revoke",
-      "request_body": "token=5b8a828bb76c55a17c05fc059618a09c43d75f7c37d19b01897676040f8c5097",
+      "request_body": "token=da81027c0c2252a02aba5fb48e33b252edef762907180370cf1ba3b07521d443",
       "request_headers": {
-        "Authorization": "Bearer 5b8a828bb76c55a17c05fc059618a09c43d75f7c37d19b01897676040f8c5097",
+        "Authorization": "Bearer da81027c0c2252a02aba5fb48e33b252edef762907180370cf1ba3b07521d443",
         "Content-Type": "application/x-www-form-urlencoded"
       },
       "request_query_parameters": {

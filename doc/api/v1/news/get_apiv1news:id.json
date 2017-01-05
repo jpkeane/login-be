@@ -7,6 +7,7 @@
   "explanation": "Retrieve an individual news item.",
   "parameters": [
     {
+      "required": true,
       "name": "id",
       "description": "The ID number of the requested news item."
     }
@@ -39,7 +40,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "api/v1/news/42",
+      "request_path": "api/v1/news/70",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
@@ -49,7 +50,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"data\": {\n    \"id\": \"42\",\n    \"type\": \"news\",\n    \"attributes\": {\n      \"title\": \"Temporibus ut et vitae unde illo corrupti.\",\n      \"date\": \"2016-12-25\",\n      \"body\": \"Qui reiciendis nihil. Eum non error inventore. Molestiae rem quia cumque sed omnis omnis.\"\n    }\n  }\n}",
+      "response_body": "{\n  \"data\": {\n    \"id\": \"70\",\n    \"type\": \"news\",\n    \"attributes\": {\n      \"title\": \"Deleniti perferendis sit cupiditate debitis officia corporis.\",\n      \"date\": \"2016-12-19\",\n      \"body\": \"Est dignissimos totam. Iure accusamus officiis velit corrupti. Commodi mollitia corrupti molestias. Saepe laborum assumenda libero dolorem. In quae nobis.\"\n    }\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

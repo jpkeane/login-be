@@ -4,7 +4,7 @@
   "http_method": "POST",
   "route": "/oauth/token",
   "description": "POST /oauth/token",
-  "explanation": null,
+  "explanation": "Grant a new OAuth2 token for authentication with requests.",
   "parameters": [
     {
       "required": true,
@@ -49,7 +49,7 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"access_token\": \"23c9600831f32ba773e6aaa1618d6ea2df868a26acc5b8c7ca42db88f3b2055d\",\n  \"token_type\": \"bearer\",\n  \"created_at\": 1483631976\n}",
+      "response_body": "{\n  \"access_token\": \"1ebc344c4d07b9babb1b807a13da8d3a653fcd5c97ba048020aacd26c734b31e\",\n  \"token_type\": \"bearer\",\n  \"created_at\": 1483635326\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

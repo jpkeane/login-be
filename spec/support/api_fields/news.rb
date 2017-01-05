@@ -9,5 +9,5 @@ RSpec.shared_context 'v1 news response fields' do
 end
 
 RSpec.shared_context 'v1 news show request params' do
-  parameter :id, 'The ID number of the requested news item.'
+  parameter :id, 'The ID number of the requested news item.', required: true
 end
