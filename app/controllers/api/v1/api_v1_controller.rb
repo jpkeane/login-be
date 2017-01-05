@@ -1,6 +1,8 @@
 module Api
   module V1
     class ApiV1Controller < Api::ApiController
+      before_action :doorkeeper_authorize!
+
       def current_user
         @current_user ||= _doorkeeper_user
       end

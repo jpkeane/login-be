@@ -1,7 +1,6 @@
 module Api
   module V1
     class ProductsController < ApiV1Controller
-      before_action :doorkeeper_authorize!
       before_action :set_product, only: [:show, :update, :destroy]
 
       # GET /products
