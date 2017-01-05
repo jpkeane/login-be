@@ -1,0 +1,39 @@
+{
+  "resource": "Products",
+  "resource_explanation": null,
+  "http_method": "DELETE",
+  "route": "api/v1/products/:id",
+  "description": "DELETE /api/v1/product/:id",
+  "explanation": "Delete an individual product.",
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "The ID number of the product to be deleted."
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "api/v1/products/180",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Bearer 1aebb70396da4b56c8f95dcdd4a2afcab0384bba77059f250800a780769c0bcd",
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {
+      },
+      "response_content_type": null,
+      "curl": null
+    }
+  ]
+}

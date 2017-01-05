@@ -25,11 +25,25 @@
       "explanation": null,
       "examples": [
         {
+          "description": "POST /api/v1/product",
+          "link": "products/post_apiv1product.json",
+          "groups": "all",
+          "route": "api/v1/products",
+          "method": "post"
+        },
+        {
           "description": "GET /api/v1/product/:id",
           "link": "products/get_apiv1product:id.json",
           "groups": "all",
           "route": "api/v1/products/:id",
           "method": "get"
+        },
+        {
+          "description": "DELETE /api/v1/product/:id",
+          "link": "products/delete_apiv1product:id.json",
+          "groups": "all",
+          "route": "api/v1/products/:id",
+          "method": "delete"
         },
         {
           "description": "GET /api/v1/products",
@@ -45,17 +59,17 @@
       "explanation": null,
       "examples": [
         {
-          "description": "POST /oauth/revoke",
-          "link": "oauth_tokens/post_oauthrevoke.json",
-          "groups": "all",
-          "route": "/oauth/revoke",
-          "method": "post"
-        },
-        {
           "description": "POST /oauth/token",
           "link": "oauth_tokens/post_oauthtoken.json",
           "groups": "all",
           "route": "/oauth/token",
+          "method": "post"
+        },
+        {
+          "description": "POST /oauth/revoke",
+          "link": "oauth_tokens/post_oauthrevoke.json",
+          "groups": "all",
+          "route": "/oauth/revoke",
           "method": "post"
         }
       ]

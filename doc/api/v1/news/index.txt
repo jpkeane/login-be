@@ -1,0 +1,62 @@
+GET /api/v1/news/:id
+--------------------
+
+Parameters:
+  * id - The ID number of the requested news item.
+
+Request:
+  GET api/v1/news/163
+  Content-Type: application/vnd.api+json
+
+Response:
+  Status: 200 OK
+  Content-Type: application/json; charset=utf-8
+
+  {
+    "data": {
+      "id": "163",
+      "type": "news",
+      "attributes": {
+        "title": "Porro odit eum totam sint.",
+        "date": "2016-12-26",
+        "body": "Unde explicabo quaerat voluptatum non. Iste enim nesciunt nihil quaerat sequi fuga adipisci. Magnam soluta amet ducimus repellendus nam quia."
+      }
+    }
+  }
+
+
+GET /api/v1/news
+----------------
+
+Request:
+  GET api/v1/news
+  Content-Type: application/vnd.api+json
+
+Response:
+  Status: 200 OK
+  Content-Type: application/json; charset=utf-8
+
+  {
+    "data": [
+      {
+        "id": "164",
+        "type": "news",
+        "attributes": {
+          "title": "Laborum illum aliquam vero.",
+          "date": "2017-01-05",
+          "body": "Impedit dolor earum et. Saepe nemo praesentium natus similique tempora. Voluptas a quia magnam. Aliquid atque recusandae nam alias et. Ullam eius corporis voluptatem."
+        }
+      },
+      {
+        "id": "165",
+        "type": "news",
+        "attributes": {
+          "title": "Omnis blanditiis quis odit.",
+          "date": "2016-12-19",
+          "body": "Sed ullam molestiae velit aut. Commodi qui numquam aspernatur eos iure corrupti. Aliquid vero et voluptatem ut cupiditate fuga. Incidunt et laborum nisi repudiandae ullam. Dolor quis distinctio tempore quos qui voluptas laborum."
+        }
+      }
+    ]
+  }
+
+

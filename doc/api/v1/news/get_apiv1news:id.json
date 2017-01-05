@@ -40,7 +40,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "api/v1/news/70",
+      "request_path": "api/v1/news/163",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
@@ -50,7 +50,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"data\": {\n    \"id\": \"70\",\n    \"type\": \"news\",\n    \"attributes\": {\n      \"title\": \"Deleniti perferendis sit cupiditate debitis officia corporis.\",\n      \"date\": \"2016-12-19\",\n      \"body\": \"Est dignissimos totam. Iure accusamus officiis velit corrupti. Commodi mollitia corrupti molestias. Saepe laborum assumenda libero dolorem. In quae nobis.\"\n    }\n  }\n}",
+      "response_body": "{\n  \"data\": {\n    \"id\": \"163\",\n    \"type\": \"news\",\n    \"attributes\": {\n      \"title\": \"Porro odit eum totam sint.\",\n      \"date\": \"2016-12-26\",\n      \"body\": \"Unde explicabo quaerat voluptatum non. Iste enim nesciunt nihil quaerat sequi fuga adipisci. Magnam soluta amet ducimus repellendus nam quia.\"\n    }\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

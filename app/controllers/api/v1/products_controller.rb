@@ -21,7 +21,7 @@ module Api
         @product = Product.new(product_params)
 
         if @product.save
-          render json: @product, status: :created, location: @product
+          render json: @product, status: :created
         else
           render json: @product.errors, status: :unprocessable_entity
         end
@@ -50,7 +50,7 @@ module Api
 
       # Only allow a trusted parameter "white list" through.
       def product_params
-        params.require(:product).permit(:title, :price, :description)
+        ActiveModelSerializers::Deserialization.jsonapi_parse(params)
       end
     end
   end

@@ -1,7 +1,7 @@
 require 'rspec_api_documentation_helper'
 
 RSpec.resource 'Products' do
-  header 'Content-Type', 'application/vnd.api+json'
+  let(:type) { 'products' }
 
   get 'api/v1/products' do
     include_context 'authenticated'
@@ -36,6 +36,34 @@ RSpec.resource 'Products' do
       expect(status).to eq 200
       response_data = JSON.parse(response_body)
       expect(response_data['data']['id']).to eq id.to_s
+    end
+  end
+
+  post 'api/v1/products' do
+    include_context 'authenticated'
+    include_context 'v1 product create request params'
+
+    let!(:product) { FactoryGirl.build(:product) }
+    let(:title)       { product.title }
+    let(:price)       { product.price }
+    let(:description) { product.description }
+
+    example_request 'POST /api/v1/product' do
+      expect(status).to eq 201
+    end
+  end
+
+  delete 'api/v1/products/:id' do
+    include_context 'authenticated'
+    include_context 'v1 product delete request params'
+
+    let!(:persisted_product) { FactoryGirl.create(:product) }
+    let(:id) { persisted_product.id }
+
+    example 'DELETE /api/v1/product/:id' do
+      explanation 'Delete an individual product.'
+      do_request
+      expect(status).to eq 204
     end
   end
 end

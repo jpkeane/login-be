@@ -1,0 +1,111 @@
+POST /api/v1/product
+--------------------
+
+Parameters:
+  * type - The resource type. Always <code>product</code>.
+  * title - The title of the product.
+  * price - The price of the product.
+  * description - The product description.
+
+Request:
+  POST api/v1/products
+  Authorization: Bearer bbaed9eafc0b0dc4eff46a0e7ad7ad2c03c15404ce2cf7a38ebcc20ad8f2af69
+  Content-Type: application/x-www-form-urlencoded
+
+  data[type]=products&data[attributes][title]=Practical+Wool+Table&data[attributes][price]=99.51&data[attributes][description]=Quidem+cum+ut+nobis+et.+Harum+eos+unde+sit+facilis+fuga+explicabo+vel.+Eos+eos+nobis+sit+fugit+non+ipsa+modi.+Nihil+molestiae+ab+eum+non+ut.+Minima+alias+sed.
+
+Response:
+  Status: 201 Created
+  Content-Type: application/json; charset=utf-8
+
+  {
+    "data": {
+      "id": "178",
+      "type": "products",
+      "attributes": {
+        "title": "Practical Wool Table",
+        "price": "99.51",
+        "description": "Quidem cum ut nobis et. Harum eos unde sit facilis fuga explicabo vel. Eos eos nobis sit fugit non ipsa modi. Nihil molestiae ab eum non ut. Minima alias sed."
+      }
+    }
+  }
+
+
+GET /api/v1/product/:id
+-----------------------
+
+Parameters:
+  * id - The ID number of the requested product.
+
+Request:
+  GET api/v1/products/179
+  Authorization: Bearer 5ce97e16a095e13efd2f44596518bd14d040d883229d49cd59b4150df7489d51
+
+Response:
+  Status: 200 OK
+  Content-Type: application/json; charset=utf-8
+
+  {
+    "data": {
+      "id": "179",
+      "type": "products",
+      "attributes": {
+        "title": "Sleek Silk Watch",
+        "price": "98.73",
+        "description": "Et aliquam aut blanditiis sapiente vel. Molestiae amet quisquam nihil ut omnis. Aliquam facilis temporibus adipisci dolores sed voluptatem."
+      }
+    }
+  }
+
+
+DELETE /api/v1/product/:id
+--------------------------
+
+Parameters:
+  * id - The ID number of the product to be deleted.
+
+Request:
+  DELETE api/v1/products/180
+  Authorization: Bearer 1aebb70396da4b56c8f95dcdd4a2afcab0384bba77059f250800a780769c0bcd
+  Content-Type: application/x-www-form-urlencoded
+
+Response:
+  Status: 204 No Content
+
+
+
+GET /api/v1/products
+--------------------
+
+Request:
+  GET api/v1/products
+  Authorization: Bearer 66c13a4db446fabcfa8e80afb59829bea8668a18ee1efbc225d0ef2dbee4f9ab
+
+Response:
+  Status: 200 OK
+  Content-Type: application/json; charset=utf-8
+
+  {
+    "data": [
+      {
+        "id": "181",
+        "type": "products",
+        "attributes": {
+          "title": "Synergistic Leather Computer",
+          "price": "23.2",
+          "description": "Aperiam soluta magni doloribus consequatur aut in sed. Repellendus sit fugit voluptatibus. Natus saepe aut quasi optio laborum et voluptatem. Ea ea quia quasi."
+        }
+      },
+      {
+        "id": "182",
+        "type": "products",
+        "attributes": {
+          "title": "Mediocre Plastic Chair",
+          "price": "41.27",
+          "description": "Quaerat rem dolorem suscipit qui id repudiandae. Hic non ea. Et quia repudiandae. Dolor eligendi aut corporis explicabo eaque natus."
+        }
+      }
+    ]
+  }
+
+

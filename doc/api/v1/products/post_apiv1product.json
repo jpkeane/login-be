@@ -1,0 +1,54 @@
+{
+  "resource": "Products",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "api/v1/products",
+  "description": "POST /api/v1/product",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "type",
+      "description": "The resource type. Always <code>product</code>."
+    },
+    {
+      "scope": "attributes",
+      "name": "title",
+      "description": "The title of the product."
+    },
+    {
+      "scope": "attributes",
+      "name": "price",
+      "description": "The price of the product."
+    },
+    {
+      "scope": "attributes",
+      "name": "description",
+      "description": "The product description."
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "api/v1/products",
+      "request_body": "data[type]=products&data[attributes][title]=Practical+Wool+Table&data[attributes][price]=99.51&data[attributes][description]=Quidem+cum+ut+nobis+et.+Harum+eos+unde+sit+facilis+fuga+explicabo+vel.+Eos+eos+nobis+sit+fugit+non+ipsa+modi.+Nihil+molestiae+ab+eum+non+ut.+Minima+alias+sed.",
+      "request_headers": {
+        "Authorization": "Bearer bbaed9eafc0b0dc4eff46a0e7ad7ad2c03c15404ce2cf7a38ebcc20ad8f2af69",
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"data\": {\n    \"id\": \"178\",\n    \"type\": \"products\",\n    \"attributes\": {\n      \"title\": \"Practical Wool Table\",\n      \"price\": \"99.51\",\n      \"description\": \"Quidem cum ut nobis et. Harum eos unde sit facilis fuga explicabo vel. Eos eos nobis sit fugit non ipsa modi. Nihil molestiae ab eum non ut. Minima alias sed.\"\n    }\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+POST /oauth/token
+-----------------
+
+Parameters:
+  * grant_type - OAuth Grant Type. Must be <code>password</code>
+  * username - Username to login with
+  * password - Password to login with
+
+Request:
+  POST /oauth/token
+  Content-Type: application/x-www-form-urlencoded
+
+  grant_type=password&username=apitestuser&password=apitestpassword
+
+Response:
+  Status: 200 OK
+  Content-Type: application/json; charset=utf-8
+
+  {
+    "access_token": "e53d1b7504247600fb26b854a83976322d66e2d2a4886643e4be7dc29e2b29f0",
+    "token_type": "bearer",
+    "created_at": 1483639998
+  }
+
+
+POST /oauth/revoke
+------------------
+
+Parameters:
+  * token - OAuth token to be revoked. Must be owned by the account authorizing.
+
+Request:
+  POST /oauth/revoke
+  Authorization: Bearer ae24372db80695214f7a6bad48183a9941db97f5ad54e194e8453548a3da03c2
+  Content-Type: application/x-www-form-urlencoded
+
+  token=ae24372db80695214f7a6bad48183a9941db97f5ad54e194e8453548a3da03c2
+
+Response:
+  Status: 200 OK
+  Content-Type: application/json; charset=utf-8
+
+  {
+  }
