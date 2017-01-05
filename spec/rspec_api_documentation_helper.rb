@@ -6,7 +6,7 @@ RspecApiDocumentation.configure do |config|
   config.app = Rails.application
 
   # Output folder
-  config.docs_dir = Rails.root.join('doc', 'v1', 'api')
+  config.docs_dir = Rails.root.join('doc', 'api', 'v1')
 
   # An array of output format(s).
   # Possible values are :json, :html, :combined_text, :combined_json,
@@ -19,15 +19,15 @@ RspecApiDocumentation.configure do |config|
   # Filter by example document type
   config.exclusion_filter = nil
 
-  config.request_headers_to_include = ['Content-Type']
-  config.response_headers_to_include = ['Content-Type']
+  config.request_headers_to_include = %w(Content-Type Authorization)
+  config.response_headers_to_include = %w(Content-Type)
 
   # By default examples and resources are ordered by description. Set to true keep
   # the source order.
   config.keep_source_order = true
 
   # Change the name of the API on index pages
-  config.api_name = 'Charity Auction Server API Documentation'
+  config.api_name = 'Login Backend API Documentation'
 
   # Change how the post body is formatted by default, you can still override by `raw_post`
   # Can be :json, :xml, or a proc that will be passed the params

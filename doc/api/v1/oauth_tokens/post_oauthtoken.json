@@ -1,0 +1,60 @@
+{
+  "resource": "OAuth Tokens",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/oauth/token",
+  "description": "POST /oauth/token",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "grant_type",
+      "description": "OAuth Grant Type. Must be <code>password</code>"
+    },
+    {
+      "required": true,
+      "name": "username",
+      "description": "Username to login with"
+    },
+    {
+      "required": true,
+      "name": "password",
+      "description": "Password to login with"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "access_token",
+      "description": "OAuth bearer access token"
+    },
+    {
+      "name": "token_type",
+      "description": "OAuth token type. Will be <code>bearer</code>"
+    },
+    {
+      "name": "created_at",
+      "description": "Token created timestamp"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/oauth/token",
+      "request_body": "grant_type=password&username=apitestuser&password=apitestpassword",
+      "request_headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"access_token\": \"23c9600831f32ba773e6aaa1618d6ea2df868a26acc5b8c7ca42db88f3b2055d\",\n  \"token_type\": \"bearer\",\n  \"created_at\": 1483631976\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

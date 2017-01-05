@@ -10,7 +10,7 @@ gem 'pg', '~> 0.18'
 gem 'bcrypt', '~> 3.1.7'
 
 # API
-gem 'active_model_serializers', '~> 0.10.2'
+gem 'active_model_serializers', '~> 0.10.3'
 
 # Application servers
 gem 'puma', '~> 3.0'
@@ -18,6 +18,9 @@ gem 'puma', '~> 3.0'
 # AAA
 gem 'doorkeeper'
 gem 'pundit'
+
+# Documentation
+gem 'apitome'
 
 group :development do
   # Tooling

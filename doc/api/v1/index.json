@@ -1,0 +1,44 @@
+{
+  "resources": [
+    {
+      "name": "OAuth Tokens",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "POST /oauth/token",
+          "link": "oauth_tokens/post_oauthtoken.json",
+          "groups": "all",
+          "route": "/oauth/token",
+          "method": "post"
+        },
+        {
+          "description": "POST /oauth/revoke",
+          "link": "oauth_tokens/post_oauthrevoke.json",
+          "groups": "all",
+          "route": "/oauth/revoke",
+          "method": "post"
+        }
+      ]
+    },
+    {
+      "name": "News",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "GET /api/v1/news",
+          "link": "news/get_apiv1news.json",
+          "groups": "all",
+          "route": "api/v1/news",
+          "method": "get"
+        },
+        {
+          "description": "GET /api/v1/news/:id",
+          "link": "news/get_apiv1news:id.json",
+          "groups": "all",
+          "route": "api/v1/news/:id",
+          "method": "get"
+        }
+      ]
+    }
+  ]
+}

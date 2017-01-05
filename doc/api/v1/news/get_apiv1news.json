@@ -1,0 +1,57 @@
+{
+  "resource": "News",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "api/v1/news",
+  "description": "GET /api/v1/news",
+  "explanation": "Retrieve all news items currently available.",
+  "parameters": [
+
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "The ID number of the news item."
+    },
+    {
+      "name": "type",
+      "description": "The resource type. Always <code>news</code>."
+    },
+    {
+      "scope": "attributes",
+      "name": "title",
+      "description": "The title of the news item."
+    },
+    {
+      "scope": "attributes",
+      "name": "date",
+      "description": "The date of the news item."
+    },
+    {
+      "scope": "attributes",
+      "name": "body",
+      "description": "The main content of the news item."
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "api/v1/news",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/vnd.api+json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/vnd.api+json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"data\": [\n    {\n      \"id\": \"40\",\n      \"type\": \"news\",\n      \"attributes\": {\n        \"title\": \"Et dolores nam libero qui dolorem.\",\n        \"date\": \"2016-12-22\",\n        \"body\": \"Ratione aut architecto aliquam. Dolores voluptatum unde cumque accusantium quo animi. Qui perspiciatis earum eaque debitis consequuntur. Veritatis et est minima dignissimos quia. Consequatur non aut aperiam dignissimos unde.\"\n      }\n    },\n    {\n      \"id\": \"41\",\n      \"type\": \"news\",\n      \"attributes\": {\n        \"title\": \"Autem officiis maxime voluptas necessitatibus enim.\",\n        \"date\": \"2017-01-02\",\n        \"body\": \"Quia dolorem eum voluptas et harum. Ipsam soluta quaerat impedit. Distinctio rerum recusandae molestias quibusdam aperiam rem nisi.\"\n      }\n    }\n  ]\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}
