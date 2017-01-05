@@ -52,4 +52,35 @@ RSpec.resource 'News' do
       expect(status).to eq 201
     end
   end
+
+  patch 'api/v1/news/:id' do
+    include_context 'authenticated'
+    include_context 'v1 news update request params'
+
+    let!(:news) { FactoryGirl.create(:news) }
+    let(:id)          { news.id }
+    let(:title)       { 'new title' }
+
+    example 'PATCH /api/v1/news/:id' do
+      explanation 'Update a specified news item.'
+      do_request
+      expect(status).to eq 200
+      response_data = JSON.parse(response_body)
+      expect(response_data['data']['attributes']['title']).to eq title
+    end
+  end
+
+  delete 'api/v1/news/:id' do
+    include_context 'authenticated'
+    include_context 'v1 news delete request params'
+
+    let!(:persisted_news) { FactoryGirl.create(:news) }
+    let(:id) { persisted_news.id }
+
+    example 'DELETE /api/v1/news/:id' do
+      explanation 'Delete an individual news item.'
+      do_request
+      expect(status).to eq 204
+    end
+  end
 end

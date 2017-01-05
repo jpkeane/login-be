@@ -20,3 +20,17 @@ RSpec.shared_context 'v1 news create request params' do
     parameter :body,   'The main content of the news item.', required: true
   end
 end
+
+RSpec.shared_context 'v1 news update request params' do
+  parameter :id, 'The ID number of the news item to be updated.', required: true
+  parameter :type, 'The resource type. Always <code>news</code>.'
+  with_options scope: :attributes do
+    parameter :title,  'The title of the news item.'
+    parameter :date,   'The date of the news item.'
+    parameter :body,   'The main content of the news item.'
+  end
+end
+
+RSpec.shared_context 'v1 news delete request params' do
+  parameter :id, 'The ID number of the news item to be deleted.', required: true
+end

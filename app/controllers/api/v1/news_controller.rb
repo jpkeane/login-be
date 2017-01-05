@@ -2,13 +2,15 @@ module Api
   module V1
     class NewsController < ApiV1Controller
       skip_before_action :doorkeeper_authorize!, only: [:index, :show]
-      before_action :set_news, only: [:show]
+      before_action :set_news, only: [:show, :update, :destroy]
 
+      # GET /news
       def index
         @news = News.all
         render json: @news
       end
 
+      # GET /news/:id
       def show
         render json: @news
       end
@@ -22,6 +24,20 @@ module Api
         else
           render json: @news.errors, status: :unprocessable_entity
         end
+      end
+
+      # PATCH/PUT /news/:id
+      def update
+        if @news.update(news_params)
+          render json: @news
+        else
+          render json: @news.errors, status: :unprocessable_entity
+        end
+      end
+
+      # DELETE /products/1
+      def destroy
+        @news.destroy
       end
 
       # Use callbacks to share common setup or constraints between actions.
