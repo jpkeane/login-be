@@ -1,28 +1,17 @@
-GET /api/v1/product/:id
------------------------
+DELETE /api/v1/product/:id
+--------------------------
 
 Parameters:
-  * id - The ID number of the requested product.
+  * id - The ID number of the product to be deleted.
 
 Request:
-  GET api/v1/products/230
-  Authorization: Bearer de2d40c2f4339460361bf552ce0166cbcba7ed958312093d2e2cac792e4cc792
+  DELETE api/v1/products/254
+  Authorization: Bearer 352061ab925b047d694fbe60e51053a236286c6b685c416e2826a9a1418db5a5
+  Content-Type: application/x-www-form-urlencoded
 
 Response:
-  Status: 200 OK
-  Content-Type: application/json; charset=utf-8
+  Status: 204 No Content
 
-  {
-    "data": {
-      "id": "230",
-      "type": "products",
-      "attributes": {
-        "title": "Lightweight Granite Lamp",
-        "price": "92.63",
-        "description": "Dolore porro minus nihil ut laborum explicabo. Provident minus amet accusantium adipisci. Impedit veniam libero sapiente. Quas sed officiis ex inventore ea. Neque est ratione."
-      }
-    }
-  }
 
 
 PATCH /api/v1/product/:id
@@ -36,8 +25,8 @@ Parameters:
   * description - The product description.
 
 Request:
-  PATCH api/v1/products/231
-  Authorization: Bearer 7d136f7b5edc06259e384b81d32ca7e42177c4675dbf9f4c3ea002f95418a5e2
+  PATCH api/v1/products/255
+  Authorization: Bearer 9ba480eb0471a65a9b56bcc78dc7b2aa46882968e50f8d69fd62ec3b489cbe18
   Content-Type: application/x-www-form-urlencoded
 
   data[type]=products&data[attributes][title]=new+title
@@ -48,31 +37,15 @@ Response:
 
   {
     "data": {
-      "id": "231",
+      "id": "255",
       "type": "products",
       "attributes": {
         "title": "new title",
-        "price": "63.19",
-        "description": "Soluta optio nihil sunt. Excepturi laborum est sequi et. Tenetur vel dolorem quas. Voluptatibus sit at earum vero dolore quod eius. Et modi temporibus est."
+        "price": "58.88",
+        "description": "Soluta exercitationem non earum eum sit voluptatem non. Ratione omnis et dicta est. Doloremque sit praesentium voluptas reiciendis."
       }
     }
   }
-
-
-DELETE /api/v1/product/:id
---------------------------
-
-Parameters:
-  * id - The ID number of the product to be deleted.
-
-Request:
-  DELETE api/v1/products/232
-  Authorization: Bearer 51b8fda74617ed6f883c931e78fa2884309335233f7d546353d1d77795ca0a5d
-  Content-Type: application/x-www-form-urlencoded
-
-Response:
-  Status: 204 No Content
-
 
 
 POST /api/v1/product
@@ -86,10 +59,10 @@ Parameters:
 
 Request:
   POST api/v1/products
-  Authorization: Bearer 88970140348a45e4ca64c1e7a3d92818e72eaf636a1db53a9e605c8b72fce3fd
+  Authorization: Bearer a74825d1d4b1511c1ddb52770f8372ae59d8162efacd9b6f4e0ef0aa6a3b008e
   Content-Type: application/x-www-form-urlencoded
 
-  data[type]=products&data[attributes][title]=Small+Granite+Coat&data[attributes][price]=26.67&data[attributes][description]=Rem+voluptas+laborum.+Dolores+vel+minima+commodi+blanditiis+ipsam+sunt.+Voluptatem+inventore+recusandae.+Sequi+sunt+possimus+voluptas+a.
+  data[type]=products&data[attributes][title]=Rustic+Paper+Table&data[attributes][price]=69.65&data[attributes][description]=Odio+cum+totam+quod+quae.+Harum+quas+id+omnis+sunt+non+laudantium.+Sed+totam+consequatur.
 
 Response:
   Status: 201 Created
@@ -97,12 +70,12 @@ Response:
 
   {
     "data": {
-      "id": "233",
+      "id": "256",
       "type": "products",
       "attributes": {
-        "title": "Small Granite Coat",
-        "price": "26.67",
-        "description": "Rem voluptas laborum. Dolores vel minima commodi blanditiis ipsam sunt. Voluptatem inventore recusandae. Sequi sunt possimus voluptas a."
+        "title": "Rustic Paper Table",
+        "price": "69.65",
+        "description": "Odio cum totam quod quae. Harum quas id omnis sunt non laudantium. Sed totam consequatur."
       }
     }
   }
@@ -113,7 +86,7 @@ GET /api/v1/products
 
 Request:
   GET api/v1/products
-  Authorization: Bearer 6b21f2640887412b0836dd7eb494109266b97b3307891350d5d6e37ca7b49833
+  Authorization: Bearer db1cdac178624f423360235ea555ff24a43822f0717e851488c259df42c9e318
 
 Response:
   Status: 200 OK
@@ -122,24 +95,51 @@ Response:
   {
     "data": [
       {
-        "id": "234",
+        "id": "257",
         "type": "products",
         "attributes": {
-          "title": "Durable Wooden Wallet",
-          "price": "85.36",
-          "description": "Magni adipisci magnam possimus aut. Ab cumque mollitia quod distinctio et harum. Aut maiores quam. Dolorem et nihil optio minima delectus et alias. Sed at cum ex."
+          "title": "Small Linen Computer",
+          "price": "48.64",
+          "description": "Dolor sunt dolorem sit nam. Deserunt doloremque rerum et iste officiis. Veniam excepturi rem."
         }
       },
       {
-        "id": "235",
+        "id": "258",
         "type": "products",
         "attributes": {
-          "title": "Gorgeous Concrete Shirt",
-          "price": "96.09",
-          "description": "Excepturi possimus et eius perferendis quos perspiciatis. Corporis repellat aut qui hic est. Autem perspiciatis rerum maiores molestiae aspernatur voluptas est. Velit nobis esse."
+          "title": "Practical Linen Computer",
+          "price": "33.14",
+          "description": "Dolores tempore beatae explicabo ratione. Architecto sunt omnis quisquam aliquam vel. Quia consequatur ut velit enim optio possimus non."
         }
       }
     ]
+  }
+
+
+GET /api/v1/product/:id
+-----------------------
+
+Parameters:
+  * id - The ID number of the requested product.
+
+Request:
+  GET api/v1/products/259
+  Authorization: Bearer 5c6b7a850501f2895acea5ae5d808c7c47ad12bba8854feb5bf6286f4067da2f
+
+Response:
+  Status: 200 OK
+  Content-Type: application/json; charset=utf-8
+
+  {
+    "data": {
+      "id": "259",
+      "type": "products",
+      "attributes": {
+        "title": "Mediocre Wooden Computer",
+        "price": "52.34",
+        "description": "Ut enim voluptatem repellat rerum. Aliquid beatae nam consequatur. Corrupti repudiandae non."
+      }
+    }
   }
 
 

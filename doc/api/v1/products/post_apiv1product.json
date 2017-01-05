@@ -35,9 +35,9 @@
     {
       "request_method": "POST",
       "request_path": "api/v1/products",
-      "request_body": "data[type]=products&data[attributes][title]=Small+Granite+Coat&data[attributes][price]=26.67&data[attributes][description]=Rem+voluptas+laborum.+Dolores+vel+minima+commodi+blanditiis+ipsam+sunt.+Voluptatem+inventore+recusandae.+Sequi+sunt+possimus+voluptas+a.",
+      "request_body": "data[type]=products&data[attributes][title]=Rustic+Paper+Table&data[attributes][price]=69.65&data[attributes][description]=Odio+cum+totam+quod+quae.+Harum+quas+id+omnis+sunt+non+laudantium.+Sed+totam+consequatur.",
       "request_headers": {
-        "Authorization": "Bearer 88970140348a45e4ca64c1e7a3d92818e72eaf636a1db53a9e605c8b72fce3fd",
+        "Authorization": "Bearer a74825d1d4b1511c1ddb52770f8372ae59d8162efacd9b6f4e0ef0aa6a3b008e",
         "Content-Type": "application/x-www-form-urlencoded"
       },
       "request_query_parameters": {
@@ -45,7 +45,7 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"data\": {\n    \"id\": \"233\",\n    \"type\": \"products\",\n    \"attributes\": {\n      \"title\": \"Small Granite Coat\",\n      \"price\": \"26.67\",\n      \"description\": \"Rem voluptas laborum. Dolores vel minima commodi blanditiis ipsam sunt. Voluptatem inventore recusandae. Sequi sunt possimus voluptas a.\"\n    }\n  }\n}",
+      "response_body": "{\n  \"data\": {\n    \"id\": \"256\",\n    \"type\": \"products\",\n    \"attributes\": {\n      \"title\": \"Rustic Paper Table\",\n      \"price\": \"69.65\",\n      \"description\": \"Odio cum totam quod quae. Harum quas id omnis sunt non laudantium. Sed totam consequatur.\"\n    }\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

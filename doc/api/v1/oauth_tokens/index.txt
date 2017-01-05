@@ -1,3 +1,24 @@
+POST /oauth/revoke
+------------------
+
+Parameters:
+  * token - OAuth token to be revoked. Must be owned by the account authorizing.
+
+Request:
+  POST /oauth/revoke
+  Authorization: Bearer 240fc6df8dbca9f3643fd7c6b942e35d93729e1832b42140469303a67005cfdf
+  Content-Type: application/x-www-form-urlencoded
+
+  token=240fc6df8dbca9f3643fd7c6b942e35d93729e1832b42140469303a67005cfdf
+
+Response:
+  Status: 200 OK
+  Content-Type: application/json; charset=utf-8
+
+  {
+  }
+
+
 POST /oauth/token
 -----------------
 
@@ -17,30 +38,7 @@ Response:
   Content-Type: application/json; charset=utf-8
 
   {
-    "access_token": "a0e1efe46121134a87864669edaa8a3ce936d0308e6e44c35e942b50043c7fa2",
+    "access_token": "4f6d13c46d2c6da62c5815f24ab4d23530f6bbc4c7dd4a0a261f6faed162757f",
     "token_type": "bearer",
-    "created_at": 1483641938
+    "created_at": 1483646421
   }
-
-
-POST /oauth/revoke
-------------------
-
-Parameters:
-  * token - OAuth token to be revoked. Must be owned by the account authorizing.
-
-Request:
-  POST /oauth/revoke
-  Authorization: Bearer 26d1bddc930ce2e0b8f0be25ded1aa90de01a330bc801377ffaa8d8aa9d60c84
-  Content-Type: application/x-www-form-urlencoded
-
-  token=26d1bddc930ce2e0b8f0be25ded1aa90de01a330bc801377ffaa8d8aa9d60c84
-
-Response:
-  Status: 200 OK
-  Content-Type: application/json; charset=utf-8
-
-  {
-  }
-
-

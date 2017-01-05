@@ -1,22 +1,43 @@
 {
   "resources": [
     {
-      "name": "OAuth Tokens",
+      "name": "News",
       "explanation": null,
       "examples": [
         {
-          "description": "POST /oauth/token",
-          "link": "oauth_tokens/post_oauthtoken.json",
+          "description": "DELETE /api/v1/news/:id",
+          "link": "news/delete_apiv1news:id.json",
           "groups": "all",
-          "route": "/oauth/token",
+          "route": "api/v1/news/:id",
+          "method": "delete"
+        },
+        {
+          "description": "GET /api/v1/news/:id",
+          "link": "news/get_apiv1news:id.json",
+          "groups": "all",
+          "route": "api/v1/news/:id",
+          "method": "get"
+        },
+        {
+          "description": "POST /api/v1/news",
+          "link": "news/post_apiv1news.json",
+          "groups": "all",
+          "route": "api/v1/news",
           "method": "post"
         },
         {
-          "description": "POST /oauth/revoke",
-          "link": "oauth_tokens/post_oauthrevoke.json",
+          "description": "PATCH /api/v1/news/:id",
+          "link": "news/patch_apiv1news:id.json",
           "groups": "all",
-          "route": "/oauth/revoke",
-          "method": "post"
+          "route": "api/v1/news/:id",
+          "method": "patch"
+        },
+        {
+          "description": "GET /api/v1/news",
+          "link": "news/get_apiv1news.json",
+          "groups": "all",
+          "route": "api/v1/news",
+          "method": "get"
         }
       ]
     },
@@ -25,11 +46,11 @@
       "explanation": null,
       "examples": [
         {
-          "description": "GET /api/v1/product/:id",
-          "link": "products/get_apiv1product:id.json",
+          "description": "DELETE /api/v1/product/:id",
+          "link": "products/delete_apiv1product:id.json",
           "groups": "all",
           "route": "api/v1/products/:id",
-          "method": "get"
+          "method": "delete"
         },
         {
           "description": "PATCH /api/v1/product/:id",
@@ -37,13 +58,6 @@
           "groups": "all",
           "route": "api/v1/products/:id",
           "method": "patch"
-        },
-        {
-          "description": "DELETE /api/v1/product/:id",
-          "link": "products/delete_apiv1product:id.json",
-          "groups": "all",
-          "route": "api/v1/products/:id",
-          "method": "delete"
         },
         {
           "description": "POST /api/v1/product",
@@ -58,26 +72,33 @@
           "groups": "all",
           "route": "api/v1/products",
           "method": "get"
+        },
+        {
+          "description": "GET /api/v1/product/:id",
+          "link": "products/get_apiv1product:id.json",
+          "groups": "all",
+          "route": "api/v1/products/:id",
+          "method": "get"
         }
       ]
     },
     {
-      "name": "News",
+      "name": "OAuth Tokens",
       "explanation": null,
       "examples": [
         {
-          "description": "GET /api/v1/news/:id",
-          "link": "news/get_apiv1news:id.json",
+          "description": "POST /oauth/revoke",
+          "link": "oauth_tokens/post_oauthrevoke.json",
           "groups": "all",
-          "route": "api/v1/news/:id",
-          "method": "get"
+          "route": "/oauth/revoke",
+          "method": "post"
         },
         {
-          "description": "GET /api/v1/news",
-          "link": "news/get_apiv1news.json",
+          "description": "POST /oauth/token",
+          "link": "oauth_tokens/post_oauthtoken.json",
           "groups": "all",
-          "route": "api/v1/news",
-          "method": "get"
+          "route": "/oauth/token",
+          "method": "post"
         }
       ]
     }

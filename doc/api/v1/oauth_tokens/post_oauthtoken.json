@@ -49,7 +49,7 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"access_token\": \"a0e1efe46121134a87864669edaa8a3ce936d0308e6e44c35e942b50043c7fa2\",\n  \"token_type\": \"bearer\",\n  \"created_at\": 1483641938\n}",
+      "response_body": "{\n  \"access_token\": \"4f6d13c46d2c6da62c5815f24ab4d23530f6bbc4c7dd4a0a261f6faed162757f\",\n  \"token_type\": \"bearer\",\n  \"created_at\": 1483646421\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

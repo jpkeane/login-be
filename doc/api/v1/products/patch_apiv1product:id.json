@@ -37,10 +37,10 @@
   "requests": [
     {
       "request_method": "PATCH",
-      "request_path": "api/v1/products/231",
+      "request_path": "api/v1/products/255",
       "request_body": "data[type]=products&data[attributes][title]=new+title",
       "request_headers": {
-        "Authorization": "Bearer 7d136f7b5edc06259e384b81d32ca7e42177c4675dbf9f4c3ea002f95418a5e2",
+        "Authorization": "Bearer 9ba480eb0471a65a9b56bcc78dc7b2aa46882968e50f8d69fd62ec3b489cbe18",
         "Content-Type": "application/x-www-form-urlencoded"
       },
       "request_query_parameters": {
@@ -48,7 +48,7 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"data\": {\n    \"id\": \"231\",\n    \"type\": \"products\",\n    \"attributes\": {\n      \"title\": \"new title\",\n      \"price\": \"63.19\",\n      \"description\": \"Soluta optio nihil sunt. Excepturi laborum est sequi et. Tenetur vel dolorem quas. Voluptatibus sit at earum vero dolore quod eius. Et modi temporibus est.\"\n    }\n  }\n}",
+      "response_body": "{\n  \"data\": {\n    \"id\": \"255\",\n    \"type\": \"products\",\n    \"attributes\": {\n      \"title\": \"new title\",\n      \"price\": \"58.88\",\n      \"description\": \"Soluta exercitationem non earum eum sit voluptatem non. Ratione omnis et dicta est. Doloremque sit praesentium voluptas reiciendis.\"\n    }\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

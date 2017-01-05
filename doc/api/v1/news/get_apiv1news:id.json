@@ -40,17 +40,16 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "api/v1/news/190",
+      "request_path": "api/v1/news/244",
       "request_body": null,
       "request_headers": {
-        "Content-Type": "application/vnd.api+json"
       },
       "request_query_parameters": {
       },
-      "request_content_type": "application/vnd.api+json",
+      "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"data\": {\n    \"id\": \"190\",\n    \"type\": \"news\",\n    \"attributes\": {\n      \"title\": \"Eos quibusdam nihil sapiente pariatur temporibus doloribus.\",\n      \"date\": \"2016-12-21\",\n      \"body\": \"Possimus voluptatum quo sapiente et omnis velit. Inventore et eligendi accusamus nam. Et maxime ipsam nam cum. Ratione vitae repellendus. Non nemo culpa dolore ut voluptas.\"\n    }\n  }\n}",
+      "response_body": "{\n  \"data\": {\n    \"id\": \"244\",\n    \"type\": \"news\",\n    \"attributes\": {\n      \"title\": \"Est non suscipit quam excepturi.\",\n      \"date\": \"2016-12-29\",\n      \"body\": \"Rerum magni molestias est. Vel eos incidunt quas rem eligendi praesentium iste. Occaecati libero exercitationem non sapiente. Et qui aliquid mollitia autem consequuntur consequatur ut. Repudiandae consectetur expedita cupiditate.\"\n    }\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

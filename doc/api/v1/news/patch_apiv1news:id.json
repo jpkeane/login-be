@@ -1,0 +1,59 @@
+{
+  "resource": "News",
+  "resource_explanation": null,
+  "http_method": "PATCH",
+  "route": "api/v1/news/:id",
+  "description": "PATCH /api/v1/news/:id",
+  "explanation": "Update a specified news item.",
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "The ID number of the news item to be updated."
+    },
+    {
+      "name": "type",
+      "description": "The resource type. Always <code>news</code>."
+    },
+    {
+      "scope": "attributes",
+      "name": "title",
+      "description": "The title of the news item."
+    },
+    {
+      "scope": "attributes",
+      "name": "date",
+      "description": "The date of the news item."
+    },
+    {
+      "scope": "attributes",
+      "name": "body",
+      "description": "The main content of the news item."
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PATCH",
+      "request_path": "api/v1/news/246",
+      "request_body": "data[type]=news&data[attributes][title]=new+title",
+      "request_headers": {
+        "Authorization": "Bearer 31bd649d1244f244089306a445874ceb55f65f558fedcb61feb4479eac5c2b6a",
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"data\": {\n    \"id\": \"246\",\n    \"type\": \"news\",\n    \"attributes\": {\n      \"title\": \"new title\",\n      \"date\": \"2016-12-28\",\n      \"body\": \"Recusandae delectus quisquam sint expedita saepe voluptatem minima. Dolorem similique molestiae quod perferendis. Iste dolor non dignissimos in et omnis. Nihil nulla repellat. Fugit quaerat id assumenda sint quae aut.\"\n    }\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

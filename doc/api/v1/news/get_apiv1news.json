@@ -39,14 +39,13 @@
       "request_path": "api/v1/news",
       "request_body": null,
       "request_headers": {
-        "Content-Type": "application/vnd.api+json"
       },
       "request_query_parameters": {
       },
-      "request_content_type": "application/vnd.api+json",
+      "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"data\": [\n    {\n      \"id\": \"191\",\n      \"type\": \"news\",\n      \"attributes\": {\n        \"title\": \"Aut aut amet ad et ut sint.\",\n        \"date\": \"2016-12-15\",\n        \"body\": \"Reiciendis voluptatem perferendis illum veniam ullam eius id. Quasi qui doloremque. Maiores expedita vero architecto sit consequatur. Est enim sint saepe molestiae.\"\n      }\n    },\n    {\n      \"id\": \"192\",\n      \"type\": \"news\",\n      \"attributes\": {\n        \"title\": \"Dicta qui non quia a eos.\",\n        \"date\": \"2016-12-20\",\n        \"body\": \"Rem adipisci sit tempora iste in numquam exercitationem. Et dignissimos blanditiis accusamus. Ipsa vel suscipit et et rerum.\"\n      }\n    }\n  ]\n}",
+      "response_body": "{\n  \"data\": [\n    {\n      \"id\": \"247\",\n      \"type\": \"news\",\n      \"attributes\": {\n        \"title\": \"Quae accusamus temporibus illum nam quos.\",\n        \"date\": \"2017-01-01\",\n        \"body\": \"Et corrupti provident consequatur. Aut delectus qui est. Molestiae ipsum soluta vel non praesentium est. In quo est quia.\"\n      }\n    },\n    {\n      \"id\": \"248\",\n      \"type\": \"news\",\n      \"attributes\": {\n        \"title\": \"Neque voluptatem error consequuntur non nihil quia exercitationem ab.\",\n        \"date\": \"2016-12-18\",\n        \"body\": \"Et praesentium ipsa ducimus quis. Molestias provident nihil natus. Necessitatibus neque consequatur omnis est ea.\"\n      }\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

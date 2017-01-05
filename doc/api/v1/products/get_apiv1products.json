@@ -39,14 +39,14 @@
       "request_path": "api/v1/products",
       "request_body": null,
       "request_headers": {
-        "Authorization": "Bearer 6b21f2640887412b0836dd7eb494109266b97b3307891350d5d6e37ca7b49833"
+        "Authorization": "Bearer db1cdac178624f423360235ea555ff24a43822f0717e851488c259df42c9e318"
       },
       "request_query_parameters": {
       },
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"data\": [\n    {\n      \"id\": \"234\",\n      \"type\": \"products\",\n      \"attributes\": {\n        \"title\": \"Durable Wooden Wallet\",\n        \"price\": \"85.36\",\n        \"description\": \"Magni adipisci magnam possimus aut. Ab cumque mollitia quod distinctio et harum. Aut maiores quam. Dolorem et nihil optio minima delectus et alias. Sed at cum ex.\"\n      }\n    },\n    {\n      \"id\": \"235\",\n      \"type\": \"products\",\n      \"attributes\": {\n        \"title\": \"Gorgeous Concrete Shirt\",\n        \"price\": \"96.09\",\n        \"description\": \"Excepturi possimus et eius perferendis quos perspiciatis. Corporis repellat aut qui hic est. Autem perspiciatis rerum maiores molestiae aspernatur voluptas est. Velit nobis esse.\"\n      }\n    }\n  ]\n}",
+      "response_body": "{\n  \"data\": [\n    {\n      \"id\": \"257\",\n      \"type\": \"products\",\n      \"attributes\": {\n        \"title\": \"Small Linen Computer\",\n        \"price\": \"48.64\",\n        \"description\": \"Dolor sunt dolorem sit nam. Deserunt doloremque rerum et iste officiis. Veniam excepturi rem.\"\n      }\n    },\n    {\n      \"id\": \"258\",\n      \"type\": \"products\",\n      \"attributes\": {\n        \"title\": \"Practical Linen Computer\",\n        \"price\": \"33.14\",\n        \"description\": \"Dolores tempore beatae explicabo ratione. Architecto sunt omnis quisquam aliquam vel. Quia consequatur ut velit enim optio possimus non.\"\n      }\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

@@ -1,15 +1,15 @@
 {
-  "resource": "Products",
+  "resource": "News",
   "resource_explanation": null,
   "http_method": "DELETE",
-  "route": "api/v1/products/:id",
-  "description": "DELETE /api/v1/product/:id",
-  "explanation": "Delete an individual product.",
+  "route": "api/v1/news/:id",
+  "description": "DELETE /api/v1/news/:id",
+  "explanation": "Delete an individual news item.",
   "parameters": [
     {
       "required": true,
       "name": "id",
-      "description": "The ID number of the product to be deleted."
+      "description": "The ID number of the news item to be deleted."
     }
   ],
   "response_fields": [
@@ -18,10 +18,10 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "api/v1/products/254",
+      "request_path": "api/v1/news/243",
       "request_body": null,
       "request_headers": {
-        "Authorization": "Bearer 352061ab925b047d694fbe60e51053a236286c6b685c416e2826a9a1418db5a5",
+        "Authorization": "Bearer 72bf07e3c05a5be18288aaa396ff31a34134b5325a2a7ab23863e1cdff18ecd4",
         "Content-Type": "application/x-www-form-urlencoded"
       },
       "request_query_parameters": {

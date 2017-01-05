@@ -1,0 +1,57 @@
+{
+  "resource": "News",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "api/v1/news",
+  "description": "POST /api/v1/news",
+  "explanation": "Create a new news item.",
+  "parameters": [
+    {
+      "name": "type",
+      "description": "The resource type. Always <code>news</code>."
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "title",
+      "description": "The title of the news item."
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "date",
+      "description": "The date of the news item."
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "body",
+      "description": "The main content of the news item."
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "api/v1/news",
+      "request_body": "data[type]=news&data[attributes][title]=Possimus+consequuntur+quos+similique+debitis.&data[attributes][date]=2016-12-11&data[attributes][body]=Doloremque+nisi+est+autem+est+deserunt.+Voluptatem+labore+et+sequi+sint+quaerat+sed.+Aut+cumque+id.",
+      "request_headers": {
+        "Authorization": "Bearer ca4ff544aec6cbba7ef93b2c74e71411f05e6ad3e698b9ea40e4b50613595567",
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"data\": {\n    \"id\": \"245\",\n    \"type\": \"news\",\n    \"attributes\": {\n      \"title\": \"Possimus consequuntur quos similique debitis.\",\n      \"date\": \"2016-12-11\",\n      \"body\": \"Doloremque nisi est autem est deserunt. Voluptatem labore et sequi sint quaerat sed. Aut cumque id.\"\n    }\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}
