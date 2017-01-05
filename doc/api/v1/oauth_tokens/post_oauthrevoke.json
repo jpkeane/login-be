@@ -19,9 +19,9 @@
     {
       "request_method": "POST",
       "request_path": "/oauth/revoke",
-      "request_body": "token=ae24372db80695214f7a6bad48183a9941db97f5ad54e194e8453548a3da03c2",
+      "request_body": "token=26d1bddc930ce2e0b8f0be25ded1aa90de01a330bc801377ffaa8d8aa9d60c84",
       "request_headers": {
-        "Authorization": "Bearer ae24372db80695214f7a6bad48183a9941db97f5ad54e194e8453548a3da03c2",
+        "Authorization": "Bearer 26d1bddc930ce2e0b8f0be25ded1aa90de01a330bc801377ffaa8d8aa9d60c84",
         "Content-Type": "application/x-www-form-urlencoded"
       },
       "request_query_parameters": {

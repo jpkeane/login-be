@@ -1,60 +1,6 @@
 {
   "resources": [
     {
-      "name": "News",
-      "explanation": null,
-      "examples": [
-        {
-          "description": "GET /api/v1/news/:id",
-          "link": "news/get_apiv1news:id.json",
-          "groups": "all",
-          "route": "api/v1/news/:id",
-          "method": "get"
-        },
-        {
-          "description": "GET /api/v1/news",
-          "link": "news/get_apiv1news.json",
-          "groups": "all",
-          "route": "api/v1/news",
-          "method": "get"
-        }
-      ]
-    },
-    {
-      "name": "Products",
-      "explanation": null,
-      "examples": [
-        {
-          "description": "POST /api/v1/product",
-          "link": "products/post_apiv1product.json",
-          "groups": "all",
-          "route": "api/v1/products",
-          "method": "post"
-        },
-        {
-          "description": "GET /api/v1/product/:id",
-          "link": "products/get_apiv1product:id.json",
-          "groups": "all",
-          "route": "api/v1/products/:id",
-          "method": "get"
-        },
-        {
-          "description": "DELETE /api/v1/product/:id",
-          "link": "products/delete_apiv1product:id.json",
-          "groups": "all",
-          "route": "api/v1/products/:id",
-          "method": "delete"
-        },
-        {
-          "description": "GET /api/v1/products",
-          "link": "products/get_apiv1products.json",
-          "groups": "all",
-          "route": "api/v1/products",
-          "method": "get"
-        }
-      ]
-    },
-    {
       "name": "OAuth Tokens",
       "explanation": null,
       "examples": [
@@ -71,6 +17,67 @@
           "groups": "all",
           "route": "/oauth/revoke",
           "method": "post"
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "GET /api/v1/product/:id",
+          "link": "products/get_apiv1product:id.json",
+          "groups": "all",
+          "route": "api/v1/products/:id",
+          "method": "get"
+        },
+        {
+          "description": "PATCH /api/v1/product/:id",
+          "link": "products/patch_apiv1product:id.json",
+          "groups": "all",
+          "route": "api/v1/products/:id",
+          "method": "patch"
+        },
+        {
+          "description": "DELETE /api/v1/product/:id",
+          "link": "products/delete_apiv1product:id.json",
+          "groups": "all",
+          "route": "api/v1/products/:id",
+          "method": "delete"
+        },
+        {
+          "description": "POST /api/v1/product",
+          "link": "products/post_apiv1product.json",
+          "groups": "all",
+          "route": "api/v1/products",
+          "method": "post"
+        },
+        {
+          "description": "GET /api/v1/products",
+          "link": "products/get_apiv1products.json",
+          "groups": "all",
+          "route": "api/v1/products",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "News",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "GET /api/v1/news/:id",
+          "link": "news/get_apiv1news:id.json",
+          "groups": "all",
+          "route": "api/v1/news/:id",
+          "method": "get"
+        },
+        {
+          "description": "GET /api/v1/news",
+          "link": "news/get_apiv1news.json",
+          "groups": "all",
+          "route": "api/v1/news",
+          "method": "get"
         }
       ]
     }

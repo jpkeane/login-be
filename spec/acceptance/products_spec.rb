@@ -48,8 +48,27 @@ RSpec.resource 'Products' do
     let(:price)       { product.price }
     let(:description) { product.description }
 
-    example_request 'POST /api/v1/product' do
+    example 'POST /api/v1/product' do
+      explanation 'Create a new product.'
+      do_request
       expect(status).to eq 201
+    end
+  end
+
+  patch 'api/v1/products/:id' do
+    include_context 'authenticated'
+    include_context 'v1 product update request params'
+
+    let!(:product) { FactoryGirl.create(:product) }
+    let(:id)          { product.id }
+    let(:title)       { 'new title' }
+
+    example 'PATCH /api/v1/product/:id' do
+      explanation 'Update a specified product.'
+      do_request
+      expect(status).to eq 200
+      response_data = JSON.parse(response_body)
+      expect(response_data['data']['attributes']['title']).to eq title
     end
   end
 

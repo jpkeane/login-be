@@ -15,6 +15,16 @@ end
 RSpec.shared_context 'v1 product create request params' do
   parameter :type, 'The resource type. Always <code>product</code>.'
   with_options scope: :attributes do
+    parameter :title,        'The title of the product.', required: true
+    parameter :price,        'The price of the product.', required: true
+    parameter :description,  'The product description.'
+  end
+end
+
+RSpec.shared_context 'v1 product update request params' do
+  parameter :type, 'The resource type. Always <code>product</code>.'
+  parameter :id, 'The ID number of the product to update.', required: true
+  with_options scope: :attributes do
     parameter :title,        'The title of the product.'
     parameter :price,        'The price of the product.'
     parameter :description,  'The product description.'

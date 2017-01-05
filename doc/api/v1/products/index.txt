@@ -1,36 +1,3 @@
-POST /api/v1/product
---------------------
-
-Parameters:
-  * type - The resource type. Always <code>product</code>.
-  * title - The title of the product.
-  * price - The price of the product.
-  * description - The product description.
-
-Request:
-  POST api/v1/products
-  Authorization: Bearer bbaed9eafc0b0dc4eff46a0e7ad7ad2c03c15404ce2cf7a38ebcc20ad8f2af69
-  Content-Type: application/x-www-form-urlencoded
-
-  data[type]=products&data[attributes][title]=Practical+Wool+Table&data[attributes][price]=99.51&data[attributes][description]=Quidem+cum+ut+nobis+et.+Harum+eos+unde+sit+facilis+fuga+explicabo+vel.+Eos+eos+nobis+sit+fugit+non+ipsa+modi.+Nihil+molestiae+ab+eum+non+ut.+Minima+alias+sed.
-
-Response:
-  Status: 201 Created
-  Content-Type: application/json; charset=utf-8
-
-  {
-    "data": {
-      "id": "178",
-      "type": "products",
-      "attributes": {
-        "title": "Practical Wool Table",
-        "price": "99.51",
-        "description": "Quidem cum ut nobis et. Harum eos unde sit facilis fuga explicabo vel. Eos eos nobis sit fugit non ipsa modi. Nihil molestiae ab eum non ut. Minima alias sed."
-      }
-    }
-  }
-
-
 GET /api/v1/product/:id
 -----------------------
 
@@ -38,8 +5,8 @@ Parameters:
   * id - The ID number of the requested product.
 
 Request:
-  GET api/v1/products/179
-  Authorization: Bearer 5ce97e16a095e13efd2f44596518bd14d040d883229d49cd59b4150df7489d51
+  GET api/v1/products/230
+  Authorization: Bearer de2d40c2f4339460361bf552ce0166cbcba7ed958312093d2e2cac792e4cc792
 
 Response:
   Status: 200 OK
@@ -47,12 +14,46 @@ Response:
 
   {
     "data": {
-      "id": "179",
+      "id": "230",
       "type": "products",
       "attributes": {
-        "title": "Sleek Silk Watch",
-        "price": "98.73",
-        "description": "Et aliquam aut blanditiis sapiente vel. Molestiae amet quisquam nihil ut omnis. Aliquam facilis temporibus adipisci dolores sed voluptatem."
+        "title": "Lightweight Granite Lamp",
+        "price": "92.63",
+        "description": "Dolore porro minus nihil ut laborum explicabo. Provident minus amet accusantium adipisci. Impedit veniam libero sapiente. Quas sed officiis ex inventore ea. Neque est ratione."
+      }
+    }
+  }
+
+
+PATCH /api/v1/product/:id
+-------------------------
+
+Parameters:
+  * type - The resource type. Always <code>product</code>.
+  * id - The ID number of the product to update.
+  * title - The title of the product.
+  * price - The price of the product.
+  * description - The product description.
+
+Request:
+  PATCH api/v1/products/231
+  Authorization: Bearer 7d136f7b5edc06259e384b81d32ca7e42177c4675dbf9f4c3ea002f95418a5e2
+  Content-Type: application/x-www-form-urlencoded
+
+  data[type]=products&data[attributes][title]=new+title
+
+Response:
+  Status: 200 OK
+  Content-Type: application/json; charset=utf-8
+
+  {
+    "data": {
+      "id": "231",
+      "type": "products",
+      "attributes": {
+        "title": "new title",
+        "price": "63.19",
+        "description": "Soluta optio nihil sunt. Excepturi laborum est sequi et. Tenetur vel dolorem quas. Voluptatibus sit at earum vero dolore quod eius. Et modi temporibus est."
       }
     }
   }
@@ -65,8 +66,8 @@ Parameters:
   * id - The ID number of the product to be deleted.
 
 Request:
-  DELETE api/v1/products/180
-  Authorization: Bearer 1aebb70396da4b56c8f95dcdd4a2afcab0384bba77059f250800a780769c0bcd
+  DELETE api/v1/products/232
+  Authorization: Bearer 51b8fda74617ed6f883c931e78fa2884309335233f7d546353d1d77795ca0a5d
   Content-Type: application/x-www-form-urlencoded
 
 Response:
@@ -74,12 +75,45 @@ Response:
 
 
 
+POST /api/v1/product
+--------------------
+
+Parameters:
+  * type - The resource type. Always <code>product</code>.
+  * title - The title of the product.
+  * price - The price of the product.
+  * description - The product description.
+
+Request:
+  POST api/v1/products
+  Authorization: Bearer 88970140348a45e4ca64c1e7a3d92818e72eaf636a1db53a9e605c8b72fce3fd
+  Content-Type: application/x-www-form-urlencoded
+
+  data[type]=products&data[attributes][title]=Small+Granite+Coat&data[attributes][price]=26.67&data[attributes][description]=Rem+voluptas+laborum.+Dolores+vel+minima+commodi+blanditiis+ipsam+sunt.+Voluptatem+inventore+recusandae.+Sequi+sunt+possimus+voluptas+a.
+
+Response:
+  Status: 201 Created
+  Content-Type: application/json; charset=utf-8
+
+  {
+    "data": {
+      "id": "233",
+      "type": "products",
+      "attributes": {
+        "title": "Small Granite Coat",
+        "price": "26.67",
+        "description": "Rem voluptas laborum. Dolores vel minima commodi blanditiis ipsam sunt. Voluptatem inventore recusandae. Sequi sunt possimus voluptas a."
+      }
+    }
+  }
+
+
 GET /api/v1/products
 --------------------
 
 Request:
   GET api/v1/products
-  Authorization: Bearer 66c13a4db446fabcfa8e80afb59829bea8668a18ee1efbc225d0ef2dbee4f9ab
+  Authorization: Bearer 6b21f2640887412b0836dd7eb494109266b97b3307891350d5d6e37ca7b49833
 
 Response:
   Status: 200 OK
@@ -88,21 +122,21 @@ Response:
   {
     "data": [
       {
-        "id": "181",
+        "id": "234",
         "type": "products",
         "attributes": {
-          "title": "Synergistic Leather Computer",
-          "price": "23.2",
-          "description": "Aperiam soluta magni doloribus consequatur aut in sed. Repellendus sit fugit voluptatibus. Natus saepe aut quasi optio laborum et voluptatem. Ea ea quia quasi."
+          "title": "Durable Wooden Wallet",
+          "price": "85.36",
+          "description": "Magni adipisci magnam possimus aut. Ab cumque mollitia quod distinctio et harum. Aut maiores quam. Dolorem et nihil optio minima delectus et alias. Sed at cum ex."
         }
       },
       {
-        "id": "182",
+        "id": "235",
         "type": "products",
         "attributes": {
-          "title": "Mediocre Plastic Chair",
-          "price": "41.27",
-          "description": "Quaerat rem dolorem suscipit qui id repudiandae. Hic non ea. Et quia repudiandae. Dolor eligendi aut corporis explicabo eaque natus."
+          "title": "Gorgeous Concrete Shirt",
+          "price": "96.09",
+          "description": "Excepturi possimus et eius perferendis quos perspiciatis. Corporis repellat aut qui hic est. Autem perspiciatis rerum maiores molestiae aspernatur voluptas est. Velit nobis esse."
         }
       }
     ]

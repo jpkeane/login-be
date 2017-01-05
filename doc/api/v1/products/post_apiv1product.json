@@ -4,7 +4,7 @@
   "http_method": "POST",
   "route": "api/v1/products",
   "description": "POST /api/v1/product",
-  "explanation": null,
+  "explanation": "Create a new product.",
   "parameters": [
     {
       "name": "type",
@@ -12,11 +12,13 @@
     },
     {
       "scope": "attributes",
+      "required": true,
       "name": "title",
       "description": "The title of the product."
     },
     {
       "scope": "attributes",
+      "required": true,
       "name": "price",
       "description": "The price of the product."
     },
@@ -33,9 +35,9 @@
     {
       "request_method": "POST",
       "request_path": "api/v1/products",
-      "request_body": "data[type]=products&data[attributes][title]=Practical+Wool+Table&data[attributes][price]=99.51&data[attributes][description]=Quidem+cum+ut+nobis+et.+Harum+eos+unde+sit+facilis+fuga+explicabo+vel.+Eos+eos+nobis+sit+fugit+non+ipsa+modi.+Nihil+molestiae+ab+eum+non+ut.+Minima+alias+sed.",
+      "request_body": "data[type]=products&data[attributes][title]=Small+Granite+Coat&data[attributes][price]=26.67&data[attributes][description]=Rem+voluptas+laborum.+Dolores+vel+minima+commodi+blanditiis+ipsam+sunt.+Voluptatem+inventore+recusandae.+Sequi+sunt+possimus+voluptas+a.",
       "request_headers": {
-        "Authorization": "Bearer bbaed9eafc0b0dc4eff46a0e7ad7ad2c03c15404ce2cf7a38ebcc20ad8f2af69",
+        "Authorization": "Bearer 88970140348a45e4ca64c1e7a3d92818e72eaf636a1db53a9e605c8b72fce3fd",
         "Content-Type": "application/x-www-form-urlencoded"
       },
       "request_query_parameters": {
@@ -43,7 +45,7 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"data\": {\n    \"id\": \"178\",\n    \"type\": \"products\",\n    \"attributes\": {\n      \"title\": \"Practical Wool Table\",\n      \"price\": \"99.51\",\n      \"description\": \"Quidem cum ut nobis et. Harum eos unde sit facilis fuga explicabo vel. Eos eos nobis sit fugit non ipsa modi. Nihil molestiae ab eum non ut. Minima alias sed.\"\n    }\n  }\n}",
+      "response_body": "{\n  \"data\": {\n    \"id\": \"233\",\n    \"type\": \"products\",\n    \"attributes\": {\n      \"title\": \"Small Granite Coat\",\n      \"price\": \"26.67\",\n      \"description\": \"Rem voluptas laborum. Dolores vel minima commodi blanditiis ipsam sunt. Voluptatem inventore recusandae. Sequi sunt possimus voluptas a.\"\n    }\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

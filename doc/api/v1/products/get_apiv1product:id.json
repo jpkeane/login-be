@@ -40,17 +40,17 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "api/v1/products/179",
+      "request_path": "api/v1/products/230",
       "request_body": null,
       "request_headers": {
-        "Authorization": "Bearer 5ce97e16a095e13efd2f44596518bd14d040d883229d49cd59b4150df7489d51"
+        "Authorization": "Bearer de2d40c2f4339460361bf552ce0166cbcba7ed958312093d2e2cac792e4cc792"
       },
       "request_query_parameters": {
       },
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"data\": {\n    \"id\": \"179\",\n    \"type\": \"products\",\n    \"attributes\": {\n      \"title\": \"Sleek Silk Watch\",\n      \"price\": \"98.73\",\n      \"description\": \"Et aliquam aut blanditiis sapiente vel. Molestiae amet quisquam nihil ut omnis. Aliquam facilis temporibus adipisci dolores sed voluptatem.\"\n    }\n  }\n}",
+      "response_body": "{\n  \"data\": {\n    \"id\": \"230\",\n    \"type\": \"products\",\n    \"attributes\": {\n      \"title\": \"Lightweight Granite Lamp\",\n      \"price\": \"92.63\",\n      \"description\": \"Dolore porro minus nihil ut laborum explicabo. Provident minus amet accusantium adipisci. Impedit veniam libero sapiente. Quas sed officiis ex inventore ea. Neque est ratione.\"\n    }\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

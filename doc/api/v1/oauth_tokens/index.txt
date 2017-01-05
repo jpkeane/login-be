@@ -17,9 +17,9 @@ Response:
   Content-Type: application/json; charset=utf-8
 
   {
-    "access_token": "e53d1b7504247600fb26b854a83976322d66e2d2a4886643e4be7dc29e2b29f0",
+    "access_token": "a0e1efe46121134a87864669edaa8a3ce936d0308e6e44c35e942b50043c7fa2",
     "token_type": "bearer",
-    "created_at": 1483639998
+    "created_at": 1483641938
   }
 
 
@@ -31,10 +31,10 @@ Parameters:
 
 Request:
   POST /oauth/revoke
-  Authorization: Bearer ae24372db80695214f7a6bad48183a9941db97f5ad54e194e8453548a3da03c2
+  Authorization: Bearer 26d1bddc930ce2e0b8f0be25ded1aa90de01a330bc801377ffaa8d8aa9d60c84
   Content-Type: application/x-www-form-urlencoded
 
-  token=ae24372db80695214f7a6bad48183a9941db97f5ad54e194e8453548a3da03c2
+  token=26d1bddc930ce2e0b8f0be25ded1aa90de01a330bc801377ffaa8d8aa9d60c84
 
 Response:
   Status: 200 OK
@@ -42,3 +42,5 @@ Response:
 
   {
   }
+
+

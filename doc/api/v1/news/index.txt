@@ -5,7 +5,7 @@ Parameters:
   * id - The ID number of the requested news item.
 
 Request:
-  GET api/v1/news/163
+  GET api/v1/news/190
   Content-Type: application/vnd.api+json
 
 Response:
@@ -14,12 +14,12 @@ Response:
 
   {
     "data": {
-      "id": "163",
+      "id": "190",
       "type": "news",
       "attributes": {
-        "title": "Porro odit eum totam sint.",
-        "date": "2016-12-26",
-        "body": "Unde explicabo quaerat voluptatum non. Iste enim nesciunt nihil quaerat sequi fuga adipisci. Magnam soluta amet ducimus repellendus nam quia."
+        "title": "Eos quibusdam nihil sapiente pariatur temporibus doloribus.",
+        "date": "2016-12-21",
+        "body": "Possimus voluptatum quo sapiente et omnis velit. Inventore et eligendi accusamus nam. Et maxime ipsam nam cum. Ratione vitae repellendus. Non nemo culpa dolore ut voluptas."
       }
     }
   }
@@ -39,24 +39,22 @@ Response:
   {
     "data": [
       {
-        "id": "164",
+        "id": "191",
         "type": "news",
         "attributes": {
-          "title": "Laborum illum aliquam vero.",
-          "date": "2017-01-05",
-          "body": "Impedit dolor earum et. Saepe nemo praesentium natus similique tempora. Voluptas a quia magnam. Aliquid atque recusandae nam alias et. Ullam eius corporis voluptatem."
+          "title": "Aut aut amet ad et ut sint.",
+          "date": "2016-12-15",
+          "body": "Reiciendis voluptatem perferendis illum veniam ullam eius id. Quasi qui doloremque. Maiores expedita vero architecto sit consequatur. Est enim sint saepe molestiae."
         }
       },
       {
-        "id": "165",
+        "id": "192",
         "type": "news",
         "attributes": {
-          "title": "Omnis blanditiis quis odit.",
-          "date": "2016-12-19",
-          "body": "Sed ullam molestiae velit aut. Commodi qui numquam aspernatur eos iure corrupti. Aliquid vero et voluptatem ut cupiditate fuga. Incidunt et laborum nisi repudiandae ullam. Dolor quis distinctio tempore quos qui voluptas laborum."
+          "title": "Dicta qui non quia a eos.",
+          "date": "2016-12-20",
+          "body": "Rem adipisci sit tempora iste in numquam exercitationem. Et dignissimos blanditiis accusamus. Ipsa vel suscipit et et rerum."
         }
       }
     ]
   }
-
-
