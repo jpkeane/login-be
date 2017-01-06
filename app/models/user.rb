@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  belongs_to :role
+
   VALID_USERNAME_REGEX = /\A[a-zA-Z0-9\_\-\.]+\z/
 
   validates :name,      presence: true

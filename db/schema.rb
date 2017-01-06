@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170106005756) do
+ActiveRecord::Schema.define(version: 20170106011017) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -82,6 +82,8 @@ ActiveRecord::Schema.define(version: 20170106005756) do
     t.string   "password_digest", null: false
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.integer  "role_id"
+    t.index ["role_id"], name: "index_users_on_role_id", using: :btree
     t.index ["username"], name: "index_users_on_username", unique: true, using: :btree
   end
 
@@ -89,4 +91,5 @@ ActiveRecord::Schema.define(version: 20170106005756) do
   add_foreign_key "oauth_access_grants", "users", column: "resource_owner_id"
   add_foreign_key "oauth_access_tokens", "oauth_applications", column: "application_id"
   add_foreign_key "oauth_access_tokens", "users", column: "resource_owner_id"
+  add_foreign_key "users", "roles"
 end
