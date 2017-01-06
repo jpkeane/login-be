@@ -18,13 +18,13 @@ RSpec.describe Api::V1::NewsController, type: :controller do
   end
 
   describe 'POST #create' do
+    new_news = FactoryGirl.build(:news)
+    let(:create_object) do
+      { data: { type: 'news', attributes: { title: new_news.title, date: new_news.date, body: new_news.body } } }
+    end
+
     context 'when correct user type' do
       include_context 'admin authenticated controller'
-
-      new_news = FactoryGirl.build(:news)
-      let(:create_object) do
-        { data: { type: 'news', attributes: { title: new_news.title, date: new_news.date, body: new_news.body } } }
-      end
 
       it 'returns 201 with valid id' do
         post :create, params: create_object
@@ -39,6 +39,15 @@ RSpec.describe Api::V1::NewsController, type: :controller do
       end
     end
 
+    context 'when incorrect user type' do
+      include_context 'customer authenticated controller'
+
+      it 'returns 403 with valid id' do
+        post :create, params: create_object
+        expect(response).to have_http_status(:forbidden)
+      end
+    end
+
     context 'when unauthenticated' do
       it 'returns 401' do
         post :create
@@ -48,13 +57,13 @@ RSpec.describe Api::V1::NewsController, type: :controller do
   end
 
   describe 'PATCH #update' do
+    let(:update_object) do
+      id = @persisted_news.id
+      { id: id, data: { id: id, type: 'news', attributes: { title: 'NEW TITLE' } } }
+    end
+
     context 'when correct user type' do
       include_context 'admin authenticated controller'
-
-      let(:update_object) do
-        id = @persisted_news.id
-        { id: id, data: { id: id, type: 'news', attributes: { title: 'NEW TITLE' } } }
-      end
 
       it 'returns 201 with valid id' do
         patch :update, params: update_object
@@ -73,6 +82,15 @@ RSpec.describe Api::V1::NewsController, type: :controller do
         incorrect_object[:data][:attributes][:title] = ''
         patch :update, params: incorrect_object
         expect(response).to have_http_status(:unprocessable_entity)
+      end
+    end
+
+    context 'when incorrect user type' do
+      include_context 'customer authenticated controller'
+
+      it 'returns 403 with valid id' do
+        patch :update, params: update_object
+        expect(response).to have_http_status(:forbidden)
       end
     end
 
@@ -96,6 +114,15 @@ RSpec.describe Api::V1::NewsController, type: :controller do
       it 'returns 404 with invalid id' do
         delete :destroy, params: { id: 0 }
         expect(response).to have_http_status(:not_found)
+      end
+    end
+
+    context 'when incorrect user type' do
+      include_context 'customer authenticated controller'
+
+      it 'returns 403 with valid id' do
+        delete :destroy, params: { id: @persisted_news.id }
+        expect(response).to have_http_status(:forbidden)
       end
     end
 

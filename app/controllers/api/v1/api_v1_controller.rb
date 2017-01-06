@@ -2,8 +2,12 @@ module Api
   module V1
     class ApiV1Controller < Api::ApiController
       include Pundit
-      after_action :verify_authorized
+
+      rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
+      rescue_from ActiveRecord::RecordNotFound, with: :not_found
+
       before_action :doorkeeper_authorize!
+      after_action :verify_authorized
 
       def current_user
         @current_user ||= _doorkeeper_user
@@ -13,6 +17,16 @@ module Api
         return unless valid_doorkeeper_token?
 
         User.find(doorkeeper_token.resource_owner_id)
+      end
+
+      private
+
+      def user_not_authorized
+        head 403
+      end
+
+      def not_found
+        head 404
       end
     end
   end
