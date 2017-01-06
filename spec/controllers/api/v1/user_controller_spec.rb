@@ -164,6 +164,13 @@ RSpec.describe Api::V1::UsersController, type: :controller do
         patch :update, params: incorrect_object
         expect(response).to have_http_status(:unprocessable_entity)
       end
+
+      it 'returns 422 when trying to change username' do
+        incorrect_object = update_object
+        incorrect_object[:data][:attributes][:username] = 'newusername'
+        patch :update, params: incorrect_object
+        expect(response).to have_http_status(:unprocessable_entity)
+      end
     end
 
     context 'when incorrect user type' do
