@@ -38,7 +38,7 @@ RSpec.resource 'News' do
   end
 
   post 'api/v1/news' do
-    include_context 'authenticated'
+    include_context 'admin authenticated request'
     include_context 'v1 news create request params'
 
     let!(:news)   { FactoryGirl.build(:news) }
@@ -54,7 +54,7 @@ RSpec.resource 'News' do
   end
 
   patch 'api/v1/news/:id' do
-    include_context 'authenticated'
+    include_context 'admin authenticated request'
     include_context 'v1 news update request params'
 
     let!(:news) { FactoryGirl.create(:news) }
@@ -71,7 +71,7 @@ RSpec.resource 'News' do
   end
 
   delete 'api/v1/news/:id' do
-    include_context 'authenticated'
+    include_context 'admin authenticated request'
     include_context 'v1 news delete request params'
 
     let!(:persisted_news) { FactoryGirl.create(:news) }

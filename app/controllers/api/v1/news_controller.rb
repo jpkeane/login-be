@@ -7,11 +7,14 @@ module Api
       # GET /news
       def index
         @news = News.all
+        authorize @news
+
         render json: @news
       end
 
       # GET /news/:id
       def show
+        authorize @news
         render json: @news
       end
 
@@ -19,6 +22,7 @@ module Api
       def create
         @news = News.new(news_params)
 
+        authorize @news
         if @news.save
           render json: @news, status: :created
         else
@@ -28,6 +32,7 @@ module Api
 
       # PATCH/PUT /news/:id
       def update
+        authorize @news
         if @news.update(news_params)
           render json: @news
         else
@@ -37,6 +42,7 @@ module Api
 
       # DELETE /products/1
       def destroy
+        authorize @news
         @news.destroy
       end
 

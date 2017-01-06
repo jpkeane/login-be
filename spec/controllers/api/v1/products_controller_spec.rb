@@ -4,7 +4,7 @@ RSpec.describe Api::V1::ProductsController, type: :controller do
   end
 
   describe 'GET #index' do
-    include_context 'authenticated controller'
+    include_context 'customer authenticated controller'
 
     it 'returns http success' do
       get :index
@@ -13,7 +13,7 @@ RSpec.describe Api::V1::ProductsController, type: :controller do
   end
 
   describe 'GET #show' do
-    include_context 'authenticated controller'
+    include_context 'customer authenticated controller'
 
     it 'returns http success' do
       get :show, params: { id: @persisted_product.id }
@@ -23,7 +23,7 @@ RSpec.describe Api::V1::ProductsController, type: :controller do
 
   describe 'POST #create' do
     context 'when correct user type' do
-      include_context 'authenticated controller'
+      include_context 'admin authenticated controller'
 
       new_product = FactoryGirl.build(:product)
       let(:create_object) do
@@ -62,7 +62,7 @@ RSpec.describe Api::V1::ProductsController, type: :controller do
 
   describe 'PATCH #update' do
     context 'when correct user type' do
-      include_context 'authenticated controller'
+      include_context 'admin authenticated controller'
 
       let(:update_object) do
         id = @persisted_product.id
@@ -108,7 +108,7 @@ RSpec.describe Api::V1::ProductsController, type: :controller do
 
   describe 'DELETE #destroy' do
     context 'when correct user type' do
-      include_context 'authenticated controller'
+      include_context 'admin authenticated controller'
 
       it 'returns 204 with valid id' do
         delete :destroy, params: { id: @persisted_product.id }

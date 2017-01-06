@@ -4,7 +4,7 @@ RSpec.resource 'Products' do
   let(:type) { 'products' }
 
   get 'api/v1/products' do
-    include_context 'authenticated'
+    include_context 'customer authenticated request'
     include_context 'v1 product response fields'
 
     before(:each) do
@@ -23,7 +23,7 @@ RSpec.resource 'Products' do
   end
 
   get 'api/v1/products/:id' do
-    include_context 'authenticated'
+    include_context 'customer authenticated request'
     include_context 'v1 product show request params'
     include_context 'v1 product response fields'
 
@@ -40,7 +40,7 @@ RSpec.resource 'Products' do
   end
 
   post 'api/v1/products' do
-    include_context 'authenticated'
+    include_context 'admin authenticated request'
     include_context 'v1 product create request params'
 
     let!(:product) { FactoryGirl.build(:product) }
@@ -56,7 +56,7 @@ RSpec.resource 'Products' do
   end
 
   patch 'api/v1/products/:id' do
-    include_context 'authenticated'
+    include_context 'admin authenticated request'
     include_context 'v1 product update request params'
 
     let!(:product) { FactoryGirl.create(:product) }
@@ -73,7 +73,7 @@ RSpec.resource 'Products' do
   end
 
   delete 'api/v1/products/:id' do
-    include_context 'authenticated'
+    include_context 'admin authenticated request'
     include_context 'v1 product delete request params'
 
     let!(:persisted_product) { FactoryGirl.create(:product) }

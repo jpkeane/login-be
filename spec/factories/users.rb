@@ -5,11 +5,11 @@ FactoryGirl.define do
     password  'testpassword'
 
     factory :admin_user do
-      role { Role.find_by_name('admin') || association(:role, name: 'admin') }
+      role { Role.find_by(name: 'admin') || association(:role, name: 'admin') }
     end
 
     factory :customer_user do
-      role { Role.find_by_name('customer') || association(:role, name: 'customer') }
+      role { Role.find_by(name: 'customer') || association(:role, name: 'customer') }
     end
   end
 end

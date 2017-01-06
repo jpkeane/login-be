@@ -6,12 +6,14 @@ module Api
       # GET /products
       def index
         @products = Product.all
+        authorize @products
 
         render json: @products
       end
 
       # GET /products/1
       def show
+        authorize @product
         render json: @product
       end
 
@@ -19,6 +21,7 @@ module Api
       def create
         @product = Product.new(product_params)
 
+        authorize @product
         if @product.save
           render json: @product, status: :created
         else
@@ -28,6 +31,7 @@ module Api
 
       # PATCH/PUT /products/1
       def update
+        authorize @product
         if @product.update(product_params)
           render json: @product
         else
@@ -37,6 +41,7 @@ module Api
 
       # DELETE /products/1
       def destroy
+        authorize @product
         @product.destroy
       end
 

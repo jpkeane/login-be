@@ -19,7 +19,7 @@ RSpec.describe Api::V1::NewsController, type: :controller do
 
   describe 'POST #create' do
     context 'when correct user type' do
-      include_context 'authenticated controller'
+      include_context 'admin authenticated controller'
 
       new_news = FactoryGirl.build(:news)
       let(:create_object) do
@@ -49,7 +49,7 @@ RSpec.describe Api::V1::NewsController, type: :controller do
 
   describe 'PATCH #update' do
     context 'when correct user type' do
-      include_context 'authenticated controller'
+      include_context 'admin authenticated controller'
 
       let(:update_object) do
         id = @persisted_news.id
@@ -86,7 +86,7 @@ RSpec.describe Api::V1::NewsController, type: :controller do
 
   describe 'DELETE #destroy' do
     context 'when correct user type' do
-      include_context 'authenticated controller'
+      include_context 'admin authenticated controller'
 
       it 'returns 204 with valid id' do
         delete :destroy, params: { id: @persisted_news.id }

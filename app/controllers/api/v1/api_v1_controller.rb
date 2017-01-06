@@ -1,6 +1,8 @@
 module Api
   module V1
     class ApiV1Controller < Api::ApiController
+      include Pundit
+      after_action :verify_authorized
       before_action :doorkeeper_authorize!
 
       def current_user

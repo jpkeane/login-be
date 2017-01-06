@@ -20,7 +20,7 @@ RSpec.resource 'OAuth Tokens' do
   end
 
   post '/oauth/revoke' do
-    include_context 'authenticated'
+    include_context 'customer authenticated request'
     include_context 'non_jsonapi_format'
     include_context 'oauth2 token revoke fields'
 
