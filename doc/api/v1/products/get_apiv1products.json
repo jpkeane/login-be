@@ -39,14 +39,14 @@
       "request_path": "api/v1/products",
       "request_body": null,
       "request_headers": {
-        "Authorization": "Bearer db1cdac178624f423360235ea555ff24a43822f0717e851488c259df42c9e318"
+        "Authorization": "Bearer a6a0058a4bc9596d14fbfc7fefed700ba25876ff37db916f724d4406e9a4a5f8"
       },
       "request_query_parameters": {
       },
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"data\": [\n    {\n      \"id\": \"257\",\n      \"type\": \"products\",\n      \"attributes\": {\n        \"title\": \"Small Linen Computer\",\n        \"price\": \"48.64\",\n        \"description\": \"Dolor sunt dolorem sit nam. Deserunt doloremque rerum et iste officiis. Veniam excepturi rem.\"\n      }\n    },\n    {\n      \"id\": \"258\",\n      \"type\": \"products\",\n      \"attributes\": {\n        \"title\": \"Practical Linen Computer\",\n        \"price\": \"33.14\",\n        \"description\": \"Dolores tempore beatae explicabo ratione. Architecto sunt omnis quisquam aliquam vel. Quia consequatur ut velit enim optio possimus non.\"\n      }\n    }\n  ]\n}",
+      "response_body": "{\n  \"data\": [\n    {\n      \"id\": \"223\",\n      \"type\": \"products\",\n      \"attributes\": {\n        \"title\": \"Rustic Linen Table\",\n        \"price\": \"51.73\",\n        \"description\": \"Sit adipisci qui consequatur enim ipsum. Reprehenderit ea inventore eum quaerat. A voluptatem nulla pariatur labore dolorem.\"\n      }\n    },\n    {\n      \"id\": \"224\",\n      \"type\": \"products\",\n      \"attributes\": {\n        \"title\": \"Intelligent Copper Bottle\",\n        \"price\": \"33.63\",\n        \"description\": \"Architecto quis aut totam nihil laudantium. Molestiae ut quae incidunt similique. Nihil optio sint soluta laborum eligendi eos et. Quia voluptates vel. Perspiciatis repellendus laboriosam minima.\"\n      }\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

@@ -35,9 +35,9 @@
     {
       "request_method": "POST",
       "request_path": "api/v1/products",
-      "request_body": "data[type]=products&data[attributes][title]=Rustic+Paper+Table&data[attributes][price]=69.65&data[attributes][description]=Odio+cum+totam+quod+quae.+Harum+quas+id+omnis+sunt+non+laudantium.+Sed+totam+consequatur.",
+      "request_body": "data[type]=products&data[attributes][title]=Aerodynamic+Copper+Lamp&data[attributes][price]=18.27&data[attributes][description]=Ut+in+blanditiis.+Beatae+velit+mollitia+laudantium.+Laboriosam+eum+autem.+Eligendi+id+rem+sed+consequatur.",
       "request_headers": {
-        "Authorization": "Bearer a74825d1d4b1511c1ddb52770f8372ae59d8162efacd9b6f4e0ef0aa6a3b008e",
+        "Authorization": "Bearer 052d9c85f5941b2f2347cdb967282710f171265bebce4e7c7cd0dfe9446194c4",
         "Content-Type": "application/x-www-form-urlencoded"
       },
       "request_query_parameters": {
@@ -45,7 +45,7 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"data\": {\n    \"id\": \"256\",\n    \"type\": \"products\",\n    \"attributes\": {\n      \"title\": \"Rustic Paper Table\",\n      \"price\": \"69.65\",\n      \"description\": \"Odio cum totam quod quae. Harum quas id omnis sunt non laudantium. Sed totam consequatur.\"\n    }\n  }\n}",
+      "response_body": "{\n  \"data\": {\n    \"id\": \"226\",\n    \"type\": \"products\",\n    \"attributes\": {\n      \"title\": \"Aerodynamic Copper Lamp\",\n      \"price\": \"18.27\",\n      \"description\": \"Ut in blanditiis. Beatae velit mollitia laudantium. Laboriosam eum autem. Eligendi id rem sed consequatur.\"\n    }\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

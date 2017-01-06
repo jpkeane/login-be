@@ -1,0 +1,55 @@
+{
+  "resource": "User",
+  "resource_explanation": null,
+  "http_method": "PATCH",
+  "route": "api/v1/users/:id",
+  "description": "PATCH /api/v1/user/:id",
+  "explanation": "Update a user.",
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "The user ID to update."
+    },
+    {
+      "required": true,
+      "name": "type",
+      "description": "The resource type. Always <code>users</code>."
+    },
+    {
+      "scope": "attributes",
+      "name": "password",
+      "description": "The password to change to."
+    },
+    {
+      "scope": "attributes",
+      "name": "name",
+      "description": "The users real name."
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PATCH",
+      "request_path": "api/v1/users/756",
+      "request_body": "data[type]=users&data[attributes][name]=TEST",
+      "request_headers": {
+        "Authorization": "Bearer 956f4dfaa838e271faafe636ecd1b718ca6be55e46d46f11faf5b36d05a393c8",
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"data\": {\n    \"id\": \"756\",\n    \"type\": \"users\",\n    \"attributes\": {\n      \"username\": \"mrs_sallie_skiles\",\n      \"name\": \"TEST\"\n    }\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

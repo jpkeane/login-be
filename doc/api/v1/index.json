@@ -1,6 +1,60 @@
 {
   "resources": [
     {
+      "name": "User",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "POST /api/v1/users",
+          "link": "user/post_apiv1users.json",
+          "groups": "all",
+          "route": "api/v1/users",
+          "method": "post"
+        },
+        {
+          "description": "PATCH /api/v1/user/:id",
+          "link": "user/patch_apiv1user:id.json",
+          "groups": "all",
+          "route": "api/v1/users/:id",
+          "method": "patch"
+        },
+        {
+          "description": "GET /api/v1/users/:id",
+          "link": "user/get_apiv1users:id.json",
+          "groups": "all",
+          "route": "api/v1/users/:id",
+          "method": "get"
+        },
+        {
+          "description": "GET /api/v1/users",
+          "link": "user/get_apiv1users.json",
+          "groups": "all",
+          "route": "api/v1/users",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "OAuth Tokens",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "POST /oauth/token",
+          "link": "oauth_tokens/post_oauthtoken.json",
+          "groups": "all",
+          "route": "/oauth/token",
+          "method": "post"
+        },
+        {
+          "description": "POST /oauth/revoke",
+          "link": "oauth_tokens/post_oauthrevoke.json",
+          "groups": "all",
+          "route": "/oauth/revoke",
+          "method": "post"
+        }
+      ]
+    },
+    {
       "name": "News",
       "explanation": null,
       "examples": [
@@ -19,11 +73,11 @@
           "method": "get"
         },
         {
-          "description": "POST /api/v1/news",
-          "link": "news/post_apiv1news.json",
+          "description": "GET /api/v1/news",
+          "link": "news/get_apiv1news.json",
           "groups": "all",
           "route": "api/v1/news",
-          "method": "post"
+          "method": "get"
         },
         {
           "description": "PATCH /api/v1/news/:id",
@@ -33,11 +87,11 @@
           "method": "patch"
         },
         {
-          "description": "GET /api/v1/news",
-          "link": "news/get_apiv1news.json",
+          "description": "POST /api/v1/news",
+          "link": "news/post_apiv1news.json",
           "groups": "all",
           "route": "api/v1/news",
-          "method": "get"
+          "method": "post"
         }
       ]
     },
@@ -53,6 +107,20 @@
           "method": "delete"
         },
         {
+          "description": "GET /api/v1/product/:id",
+          "link": "products/get_apiv1product:id.json",
+          "groups": "all",
+          "route": "api/v1/products/:id",
+          "method": "get"
+        },
+        {
+          "description": "GET /api/v1/products",
+          "link": "products/get_apiv1products.json",
+          "groups": "all",
+          "route": "api/v1/products",
+          "method": "get"
+        },
+        {
           "description": "PATCH /api/v1/product/:id",
           "link": "products/patch_apiv1product:id.json",
           "groups": "all",
@@ -64,40 +132,6 @@
           "link": "products/post_apiv1product.json",
           "groups": "all",
           "route": "api/v1/products",
-          "method": "post"
-        },
-        {
-          "description": "GET /api/v1/products",
-          "link": "products/get_apiv1products.json",
-          "groups": "all",
-          "route": "api/v1/products",
-          "method": "get"
-        },
-        {
-          "description": "GET /api/v1/product/:id",
-          "link": "products/get_apiv1product:id.json",
-          "groups": "all",
-          "route": "api/v1/products/:id",
-          "method": "get"
-        }
-      ]
-    },
-    {
-      "name": "OAuth Tokens",
-      "explanation": null,
-      "examples": [
-        {
-          "description": "POST /oauth/revoke",
-          "link": "oauth_tokens/post_oauthrevoke.json",
-          "groups": "all",
-          "route": "/oauth/revoke",
-          "method": "post"
-        },
-        {
-          "description": "POST /oauth/token",
-          "link": "oauth_tokens/post_oauthtoken.json",
-          "groups": "all",
-          "route": "/oauth/token",
           "method": "post"
         }
       ]

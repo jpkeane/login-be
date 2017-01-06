@@ -37,10 +37,10 @@
   "requests": [
     {
       "request_method": "PATCH",
-      "request_path": "api/v1/news/246",
+      "request_path": "api/v1/news/225",
       "request_body": "data[type]=news&data[attributes][title]=new+title",
       "request_headers": {
-        "Authorization": "Bearer 31bd649d1244f244089306a445874ceb55f65f558fedcb61feb4479eac5c2b6a",
+        "Authorization": "Bearer 2d63af726fce0dba41ea25940ba8dd6018964b436c322eff40f2ea5fe872fb9e",
         "Content-Type": "application/x-www-form-urlencoded"
       },
       "request_query_parameters": {
@@ -48,7 +48,7 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"data\": {\n    \"id\": \"246\",\n    \"type\": \"news\",\n    \"attributes\": {\n      \"title\": \"new title\",\n      \"date\": \"2016-12-28\",\n      \"body\": \"Recusandae delectus quisquam sint expedita saepe voluptatem minima. Dolorem similique molestiae quod perferendis. Iste dolor non dignissimos in et omnis. Nihil nulla repellat. Fugit quaerat id assumenda sint quae aut.\"\n    }\n  }\n}",
+      "response_body": "{\n  \"data\": {\n    \"id\": \"225\",\n    \"type\": \"news\",\n    \"attributes\": {\n      \"title\": \"new title\",\n      \"date\": \"2017-01-04\",\n      \"body\": \"Amet et non eveniet qui. Consequuntur quam occaecati eum tempore veritatis repellendus. Quidem labore fugit ut reiciendis totam non magnam. Aut ex blanditiis repellat a quasi fuga autem.\"\n    }\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

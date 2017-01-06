@@ -1,0 +1,56 @@
+{
+  "resource": "User",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "api/v1/users/:id",
+  "description": "GET /api/v1/users/:id",
+  "explanation": "Show the requested user",
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "The ID number of the requested user."
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "description": "The ID number of the user."
+    },
+    {
+      "name": "type",
+      "description": "The resource type. Always <code>users</code>."
+    },
+    {
+      "scope": "attributes",
+      "name": "username",
+      "description": "The login username."
+    },
+    {
+      "scope": "attributes",
+      "name": "name",
+      "description": "The users real name"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "api/v1/users/758",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "Bearer ba6422474f9240ab0016289f20f0b813ca4282e848f3875a3f53a364970c55fb"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"data\": {\n    \"id\": \"758\",\n    \"type\": \"users\",\n    \"attributes\": {\n      \"username\": \"dorris_howell\",\n      \"name\": \"Dorris Howell\"\n    }\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -18,10 +18,10 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "api/v1/news/243",
+      "request_path": "api/v1/news/221",
       "request_body": null,
       "request_headers": {
-        "Authorization": "Bearer 72bf07e3c05a5be18288aaa396ff31a34134b5325a2a7ab23863e1cdff18ecd4",
+        "Authorization": "Bearer 31c7bc4521d40e3b0f97746ddfa3a92dda38c1c0f1c771e47188d2d480bff525",
         "Content-Type": "application/x-www-form-urlencoded"
       },
       "request_query_parameters": {

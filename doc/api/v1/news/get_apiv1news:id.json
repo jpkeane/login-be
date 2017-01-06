@@ -40,7 +40,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "api/v1/news/244",
+      "request_path": "api/v1/news/222",
       "request_body": null,
       "request_headers": {
       },
@@ -49,7 +49,7 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"data\": {\n    \"id\": \"244\",\n    \"type\": \"news\",\n    \"attributes\": {\n      \"title\": \"Est non suscipit quam excepturi.\",\n      \"date\": \"2016-12-29\",\n      \"body\": \"Rerum magni molestias est. Vel eos incidunt quas rem eligendi praesentium iste. Occaecati libero exercitationem non sapiente. Et qui aliquid mollitia autem consequuntur consequatur ut. Repudiandae consectetur expedita cupiditate.\"\n    }\n  }\n}",
+      "response_body": "{\n  \"data\": {\n    \"id\": \"222\",\n    \"type\": \"news\",\n    \"attributes\": {\n      \"title\": \"Soluta facilis possimus officia.\",\n      \"date\": \"2016-12-22\",\n      \"body\": \"Omnis laborum expedita numquam et. Qui laborum consequatur provident minima quae eum. Repudiandae quia cupiditate aspernatur nulla temporibus fugit doloribus. Consequuntur autem illum est omnis praesentium natus porro.\"\n    }\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

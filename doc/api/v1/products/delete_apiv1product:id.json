@@ -18,10 +18,10 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "api/v1/products/254",
+      "request_path": "api/v1/products/221",
       "request_body": null,
       "request_headers": {
-        "Authorization": "Bearer 352061ab925b047d694fbe60e51053a236286c6b685c416e2826a9a1418db5a5",
+        "Authorization": "Bearer 9c5d38aa0fd95f60ebfba8a1ad2167c06d1d20bd0035ed7a62897396b04e7a36",
         "Content-Type": "application/x-www-form-urlencoded"
       },
       "request_query_parameters": {

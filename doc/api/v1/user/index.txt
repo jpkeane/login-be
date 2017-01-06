@@ -1,0 +1,138 @@
+POST /api/v1/users
+------------------
+
+Parameters:
+  * type - The resource type. Always <code>users</code>.
+  * username - The login username.
+  * password - The password for login.
+  * name - The users real name.
+
+Request:
+  POST api/v1/users
+  Content-Type: application/x-www-form-urlencoded
+
+  data[type]=users&data[attributes][username]=heloise.prosacco&data[attributes][password]=testpassword&data[attributes][name]=Heloise+Prosacco
+
+Response:
+  Status: 201 Created
+  Content-Type: application/json; charset=utf-8
+
+  {
+    "data": {
+      "id": "754",
+      "type": "users",
+      "attributes": {
+        "username": "heloise.prosacco",
+        "name": "Heloise Prosacco"
+      }
+    }
+  }
+
+
+PATCH /api/v1/user/:id
+----------------------
+
+Parameters:
+  * id - The user ID to update.
+  * type - The resource type. Always <code>users</code>.
+  * password - The password to change to.
+  * name - The users real name.
+
+Request:
+  PATCH api/v1/users/756
+  Authorization: Bearer 956f4dfaa838e271faafe636ecd1b718ca6be55e46d46f11faf5b36d05a393c8
+  Content-Type: application/x-www-form-urlencoded
+
+  data[type]=users&data[attributes][name]=TEST
+
+Response:
+  Status: 200 OK
+  Content-Type: application/json; charset=utf-8
+
+  {
+    "data": {
+      "id": "756",
+      "type": "users",
+      "attributes": {
+        "username": "mrs_sallie_skiles",
+        "name": "TEST"
+      }
+    }
+  }
+
+
+GET /api/v1/users/:id
+---------------------
+
+Parameters:
+  * id - The ID number of the requested user.
+
+Request:
+  GET api/v1/users/758
+  Authorization: Bearer ba6422474f9240ab0016289f20f0b813ca4282e848f3875a3f53a364970c55fb
+
+Response:
+  Status: 200 OK
+  Content-Type: application/json; charset=utf-8
+
+  {
+    "data": {
+      "id": "758",
+      "type": "users",
+      "attributes": {
+        "username": "dorris_howell",
+        "name": "Dorris Howell"
+      }
+    }
+  }
+
+
+GET /api/v1/users
+-----------------
+
+Request:
+  GET api/v1/users
+  Authorization: Bearer 2a11f5f20aefcd5dac71b99476b9257d44cbf48678a7e0bd3f4198f189e996f1
+
+Response:
+  Status: 200 OK
+  Content-Type: application/json; charset=utf-8
+
+  {
+    "data": [
+      {
+        "id": "759",
+        "type": "users",
+        "attributes": {
+          "username": "reinger.karen",
+          "name": "Karen Reinger"
+        }
+      },
+      {
+        "id": "760",
+        "type": "users",
+        "attributes": {
+          "username": "wilfrid_kihn",
+          "name": "Wilfrid Kihn"
+        }
+      },
+      {
+        "id": "761",
+        "type": "users",
+        "attributes": {
+          "username": "v.rasheed.runolfsson",
+          "name": "Rasheed Runolfsson V"
+        }
+      },
+      {
+        "id": "762",
+        "type": "users",
+        "attributes": {
+          "username": "dalton_dr_herzog",
+          "name": "Dr. Dalton Herzog"
+        }
+      }
+    ]
+  }
+
+
