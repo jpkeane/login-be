@@ -6,10 +6,10 @@ module Api
 
       # GET /news
       def index
-        @news = News.all
+        @news = News.limit(params[:limit])
         authorize @news
 
-        render json: @news
+        render json: @news, meta: { total: News.count }
       end
 
       # GET /news/:id

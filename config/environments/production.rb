@@ -76,4 +76,11 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.middleware.use Rack::Cors do
+    allow do
+      origins 'jk-tut-login-fe-staging.herokuapp.com'
+      resource '*', headers: :any, methods: [:get, :post, :put, :delete, :options]
+    end
+  end
 end

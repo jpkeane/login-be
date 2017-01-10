@@ -14,6 +14,7 @@ gem 'active_model_serializers', '~> 0.10.3'
 
 # Application servers
 gem 'puma', '~> 3.0'
+gem 'rack-cors'
 
 # AAA
 gem 'doorkeeper'
